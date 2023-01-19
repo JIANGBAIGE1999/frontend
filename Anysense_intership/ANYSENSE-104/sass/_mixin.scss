@@ -1,0 +1,90 @@
+//------------var------------
+
+//base 
+$baseBg: #fff;
+$baseColor: #E93F33;
+$subColor: #131f40;
+$baseFontFamily: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+$baseMinWidth: 990px;
+
+// font
+$baseFontColor: #4f361b;
+$subFontColor: #444;
+$baseFontSize: 75%;
+$baseLineHeight: 1.6;
+$strongText: 120%;
+$headColor: #000;
+
+$headdingColor1: #FF0000;
+$headdingColor2: #444;
+$headdingColor3: #000;
+
+$baseBorderColor: #DDD;
+$subBorderColor: #999;
+$grayBorderColor: #c6c6c6;
+
+//font-size
+$size10: 87%;
+$size11: 92%;
+$size12: 100%;
+$size13: 107%;
+$size14: 117%;
+$size15: 125%;
+$size16: 133%;
+$size17: 142%;
+$size18: 150%;
+$size20: 167%;
+$size22: 183%;
+$size24: 200%;
+$size26: 217%;
+$size27: 225%;
+$size32: 267%;
+
+//link
+$baseLinkColor: #003399;
+$baseLinkFontWeight: bold;
+$baseHoverColor: #80848a;
+$baseLinkDecoration: none;
+$baseHoverDecoration: underline;
+
+$borderColor: #afd9f4;
+$tableBorder: #95cadb;
+
+//------------mixin------------
+@mixin defaultWidth {
+	width: $baseMinWidth;
+	margin: 0 auto;
+}
+
+@mixin textIn {
+	text-indent: -9999px;
+	display: block;
+}
+
+@mixin noPadding {
+	letter-spacing: -0.4em;
+	li {
+		letter-spacing:normal;
+	}
+}
+
+@mixin hoverAction {
+	&:hover {
+		-webkit-transition: 0.15s opacity linear;
+		   -moz-transition: 0.15s opacity linear;
+		    -ms-transition: 0.15s opacity linear;
+		     -o-transition: 0.15s opacity linear;
+		        transition: 0.15s opacity linear;
+	    @include opacity(0.7);
+	}
+}
+
+@mixin hrList($marginTop,$marginRight,$marginBottom,$marginLeft) {
+	margin: 0 0 0 (-$marginLeft);
+	@include clearfix;
+	li {
+		float: left;
+		margin: $marginTop $marginRight $marginBottom $marginLeft;
+	}
+}
+

@@ -1,0 +1,33 @@
+//reset
+@import 'compass/reset/';
+
+//base-style
+body
+{
+    font-family: $baseFontFamily;
+    font-size: $size10;
+    line-height: $baseLineHeight;
+    min-width: $baseMinWidth;
+	color: $baseFontColor;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+
+
+a {
+	color: $baseFontColor;
+  text-decoration: $baseLinkDecoration;
+  &:hover {
+    // color: $baseHoverColor;
+    text-decoration: $baseHoverDecoration;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: top;
+}

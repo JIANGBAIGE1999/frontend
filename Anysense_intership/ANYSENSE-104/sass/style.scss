@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* --------reset-------- */
+
+@import "compass";
+@import "compass/reset";
+
+/* partial import */
+
+@import "_mixin.scss";
+@import "_base.scss";
+@import "_layout.scss";

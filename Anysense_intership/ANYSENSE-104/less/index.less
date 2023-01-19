@@ -1,0 +1,1609 @@
+// out: ../css/index.css
+
+
+
+@import 'base';//基本様式をインポートする
+
+
+// pcのmediaquery--------------------------
+
+@media (min-width: 1150px) {
+    @vw: 12.8vw;
+
+
+    // ナビゲーション----------------------
+    .title {
+        position: relative;
+        margin: 0 auto;
+        width: (1280/@vw);
+        height: (106/@vw);
+        border-bottom: (1/@vw) solid hsl(0, 10%, 74%);
+        font-family: 'Yu Mincho';
+        .icon-logo {
+            position: absolute;
+            left: (160/@vw);
+            bottom: (11/@vw);
+            font-size: (56/@vw);
+        }
+        .title_box {
+            position: absolute;
+            top: (19/@vw);
+            right: (128/@vw);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: (409/@vw);
+            // transform: scale(0.9);
+            .login {
+                display: flex;
+                align-items: center;
+                font-size: (13/@vw);
+                a {
+                    color: gray;
+                }
+            }
+            .icon-icon-cart-green {
+                width: (18/@vw);
+                height: (18/@vw);
+                margin-top: (-8/@vw);
+                margin-right: (2/@vw);
+                font-size: (18/@vw);
+            }
+        }
+        .introduce {
+            position: absolute;
+            top: (55/@vw);
+            right: (140/@vw);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: (900/@vw);
+            font-size: (21/@vw);
+            li{
+                margin-left: (10/@vw);
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
+
+    // spの部分を削除を行う
+    .dropdown,
+    .right,
+    header{
+        display: none;
+    }
+    
+
+    // 商品を説明するのモジュール----------------------------
+    .Box {
+        margin: (66/@vw) (150/@vw);
+        width: (980/@vw);
+        height: (5076/@vw);
+        // background-color: blue;
+
+        // 商品を説明する図１--------------------------------
+
+        .beauty1 {
+            position: relative;
+            font-size: (40/@vw);
+            font-weight: normal;
+            font-family: Yu Mincho;
+            letter-spacing: (3.2/@vw);
+            color: #19433F;
+            opacity: 1;
+            .beauty1_1 {
+                position: absolute;
+                top: (426.11/@vw);
+                right: (45/@vw);
+            }
+            .beauty1_2 {
+                float: right;
+                position: absolute;
+                top: (487.72/@vw);
+                right: (45/@vw);
+                height: (50/@vw);
+            }
+            .beauty1_3 {
+                position: absolute;
+                top: (547.72/@vw);
+                right: (45/@vw);
+                height: (50/@vw);
+            }
+            
+        }
+
+        // 商品を説明する図2--------------------------------
+
+        .beauty2 {
+            position: relative;
+            font-family: Yu Mincho;
+            #sp_beauty2,
+            .sp_beauty2_2{
+                display: none;
+            }
+            .beauty2_1 {
+                position: absolute;
+                top: (495/@vw);
+                left: (54/@vw);
+                width: (440.72/@vw);
+                font-size: (34/@vw);
+                letter-spacing: (2.72/@vw);
+                line-height: (58/@vw);
+                color: #FFFFFF;
+            }
+            .beauty2_2 {
+                position: absolute;
+                top: (696/@vw);
+                left: (56/@vw);
+                font-size: (20/@vw);
+                line-height: (34/@vw);
+                color: #044A28;
+            }
+        }
+        
+        .beauty3 {
+            position: relative;
+            font-family: Yu Mincho;
+            #sp_beauty3{
+                display: none;
+            }
+            .beauty3_1 {
+                position: absolute;
+                top: (89/@vw);
+                left: (56/@vw);
+                width: (554/@vw);
+                font-size: (32/@vw);
+                letter-spacing: (2.56/@vw);
+                line-height: (54/@vw);
+                color: #FFFFFF;
+            }
+            .sp_beauty3_2{
+                display: none;
+            }
+            .beauty3_2 {
+                position: absolute;
+                top: (212/@vw);
+                left: (53/@vw);
+                font-size: (17/@vw);
+                text-align: left;
+                color: #FFFFFF;
+                letter-spacing: var(--unnamed-character-spacing-0);
+            }
+        }
+
+        // 商品を説明する図4--------------------------------
+
+        .beauty4 {
+            position: relative;
+            font-family: "ヒラギノ角ゴ ProN W3";
+            .sp_beauty4_1{
+                display: none;
+            }
+            #sp_beauty4{
+                display: none;
+            }
+            .beauty4_1 {
+                position: absolute;
+                top: (153/@vw);
+                left: (116/@vw);
+                font-size: (16/@vw);
+                text-align: center;
+                color: #FFFFFF;
+                line-height: (26/@vw);
+                .interval_2,
+                .interval_3{
+                    margin-top: (29/@vw);
+                }
+                .interval_4{
+                    margin-top: (56/@vw);
+                }
+            }
+            .little_img {
+                position: absolute;
+                top: (606/@vw);
+                left: (129/@vw);
+                display: flex;
+                width: (727/@vw);
+                height:(226/@vw);
+                justify-content: space-between;
+            }
+        }
+
+
+
+        // Recipeを説明するモジュール-----------------------
+        
+        .recipe {
+            position: relative;
+            margin-top: (56/@vw);
+            width: (980/@vw);
+            height: (1115/@vw);
+            // background-color: pink;
+            img{
+                width: (304/@vw);
+                height: (305/@vw);
+            }
+            .topic {
+                position: absolute;
+                top: (-6/@vw);
+                left: (451/@vw);
+                font-size: (26/@vw);
+                // font-family: "URWClassico";
+                color: #044A28;
+                letter-spacing: var(--unnamed-character-spacing-0);
+            }
+            .onerank {
+                position: absolute;
+                top: (37/@vw);
+                left: (386/@vw);
+                font-size: (16/@vw);
+                font-family: "ヒラギノ角ゴ ProN W3";
+                color: #044A28;
+                letter-spacing: var(--unnamed-character-spacing-0);
+            }
+            .ryouri {
+                position: absolute;
+                top: (124/@vw);
+                left:(2/@vw);
+                width: (1035/@vw);
+
+                //Recipe1,2,3,4,5,6を紹介するモジュール--------
+
+                li {
+                    position: relative;
+                    float: left;
+                    margin-right: (33/@vw);
+                    width: (304/@vw);
+                    height: (529/@vw);
+                    font-family: 'Yu Mincho';
+                    color: #044A28;
+                    .recipe1 {
+                        position: absolute;
+                        top: (325/@vw);
+                        left:(-1/@vw);
+                        font-size: (18/@vw);
+                    }
+                    .recipe1_up{
+                        top: (324/@vw);
+                        left:(0/@vw);
+                    }
+                    #sp{
+                        display: none;
+                    }
+                    .recipe1_1 {
+                        position: absolute;
+                        top: (361/@vw);
+                        width: (304/@vw);
+                        font-size: (15/@vw);
+                        font-family: "ヒラギノ角ゴ ProN W3";
+                        line-height: (28/@vw);
+                    }
+                    .recipe1_1_down{
+                        top: (362/@vw);
+                    }
+
+                    //moreというのボタンを設定するモジュール
+
+                    .more {
+                        position: absolute;
+                        top: (430/@vw);
+                        left: (186/@vw);
+                        width: (119/@vw);
+                        height: (31/@vw);
+                        background: #044A28 0% 0% no-repeat padding-box;
+                        border-radius: (16/@vw);
+                        font-size: (13/@vw);
+                        font-family: "ヒラギノ角ゴ ProN W3";
+                        color: #FFFFFF;
+                        text-align: center;
+                        line-height: (31/@vw);
+                        .f{
+                            float: left;
+                            margin-left: (40/@vw);
+                        }
+                        .icon-arrow-right {
+                            float: right;
+                            margin-left: (21/@vw);
+                            top: (428/@vw);
+                            left: (106.4/@vw);
+                            opacity: 1;
+                            color: white;
+                        }
+                    }
+                }
+                li:nth-child(3n) {
+                    margin-right: 0;
+                }
+                .nav_left{
+                    left:(-2/@vw);
+                }
+                
+            }
+        }
+    }
+
+
+
+
+
+    // 商品を買うのモジュール----------------------
+
+    .goods {
+        position: relative;
+        // margin-top: (60/@vw);
+        width: (1280/@vw);
+        height: (1126/@vw);
+        background-color: #FAFAFA;
+
+        .sign{
+            position: absolute;
+            left: (512/@vw);
+            top: (66/@vw);
+            width: (243/@vw);
+            height: (66/@vw);
+            background-image: url('../../img/targetProductTtlBg.png');
+        }
+        .topic {
+            position: absolute;
+            left: (572/@vw);
+            top: (88/@vw);
+            font-family: Yu Mincho;
+            font-size: (32/@vw);
+            letter-spacing: (2.56/@vw);
+            color: #19433F;
+        }
+        .condition {
+            position: absolute;
+            left: (520/@vw);
+            top: (184/@vw);
+            .condition1 {
+                float: left;
+                margin-right: (10/@vw);
+                width: (114/@vw);
+                height: (25/@vw);
+                border: (1/@vw) solid #9D0000;
+                font-family: Yu Mincho;
+                font-size: (12/@vw);
+                text-align: center;
+                line-height: (26/@vw);
+                color: #9D0000;
+            }
+            .condition2 {
+                float: left;
+                margin-right: (10/@vw);
+                width: (78/@vw);
+                height: (25/@vw);
+                background-color: #D7B8DB;
+                font-family: Yu Mincho;
+                font-size: (12/@vw);
+                text-align: center;
+                line-height: (26/@vw);
+                color: #FFFFFF;
+            }
+            .condition3 {
+                float: left;
+                margin-right: (10/@vw);
+                width: (68/@vw);
+                height: (25/@vw);
+                background-color: #EFDC83;
+                font-family: Yu Mincho;
+                font-size: (12/@vw);
+                text-align: center;
+                line-height: (26/@vw);
+                color: #FFFFFF;
+            }
+        }
+        .img1 {
+            width: (320/@vw);
+            height: (322/@vw);
+            position: absolute;
+            left: (150/@vw);
+            top: (184/@vw);
+        }
+        .number {
+            position: absolute;
+            left: (520/@vw);
+            top: (227/@vw);
+            font-family: Yu Mincho;
+            font-size: (14/@vw);
+            color: #000000;
+        }
+        .set {
+            position: absolute;
+            left: (520/@vw);
+            top: (252/@vw);
+            font-family: Yu Mincho;
+            font-size: (28/@vw);
+            color: #19433F;
+        }
+        .no {
+            position: absolute;
+            left: (750/@vw);
+            top: (260/@vw);
+            font-family: Yu Mincho;
+            font-size: (20/@vw);
+            color: #19433F;
+        }
+        .price {
+            position: absolute;
+            left: (520/@vw);
+            top: (298/@vw);
+            font-family: "Yu Mincho";
+            font-size: (31/@vw);
+            color: #9D0000;
+            span {
+                margin-left: (7/@vw);
+                font-size: (18/@vw);
+                color: #000000;
+            }
+        }
+        .down {
+            position: absolute;
+            left: (693/@vw);
+            top: (313/@vw);
+            font-size: (14/@vw);
+            color: #000000;
+            text-decoration: line-through;
+        }
+        #sp_intro{
+            display: none;
+        }
+        .intro {
+            position: absolute;
+            left: (520/@vw);
+            top: (353/@vw);
+            width: (610/@vw);
+            height: (64/@vw);
+            line-height: (24/@vw);
+            font-family: "ヒラギノ角ゴ ProN W3";
+            font-size: (14/@vw);
+            color: #000000;
+            .limit {
+                display: block;
+                margin-top: (5/@vw);
+                color: #9D0000;
+            }
+        }
+        .btn {
+            position: relative;
+            left: (520/@vw);
+            top: (470/@vw);
+            padding-left:(20/@vw);
+            width: (200/@vw);
+            height: (34/@vw);
+            background-color: #9D0000;
+            border-radius: (16/@vw);
+            
+            font-family: "ヒラギノ角ゴ ProN W3";
+            font-size: (14/@vw);
+            color: #FFFFFF;
+            .icon-arrow-right {
+                float: right;
+                text-align: center;
+                margin-right: (-1/@vw);
+                opacity: 1;
+                color: white;
+            }
+        }
+        .sp_other{
+            display: none;
+        }
+        .other {
+            position: absolute;
+            left: (135/@vw);
+            top: (558/@vw);
+            li {
+                position: relative;
+                float: left;
+                width: (233/@vw);
+                height: (313/@vw);
+                margin-left: (16/@vw);
+                /* background-color: green; */
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: (5/@vw);
+                    width: (233/@vw);
+                    height: (233/@vw);
+                }
+            }
+            a{
+                position: absolute;
+                top: (255/@vw);
+                left: (1/@vw);
+                width: (233/@vw);
+                font-family: "ヒラギノ角ゴ ProN W6";
+                font-size: (13/@vw);
+                text-align: center;
+                color: #19433F;
+                /* background-color: red; */
+            }
+        }
+        .advertisement {
+            position: absolute;
+            left: (149/@vw);
+            bottom: (113/@vw);
+            width: (980/@vw);
+            height: (135/@vw);
+        }
+    }
+
+
+
+
+    // 企業の連絡方法のモジュール
+    .question {
+        margin-top: (-60/@vw);
+        width: (1280/@vw);
+        height: (869/@vw);
+        // background-color: pink;
+        .background {
+            position: relative;
+            // left: (20/@vw);
+            width: (1280/@vw);
+            height: (240/@vw);
+            background-color: #dbd5d5;
+            .contact1 {
+                position: relative;
+                float: left;
+                margin-left: (20/@vw);
+                width: (224/@vw);
+                height: (185/@vw);
+                // background-color: yellow;
+                font-family: "ヒラギノ角ゴ ProN W6";
+                .icon {
+                    margin-top: (37/@vw);
+                    margin-left: (16/@vw);
+                    width: (60/@vw);
+                    height: (60/@vw);
+                    fill: currentColor;
+                    overflow: hidden;
+                }
+                .ans {
+                    position: absolute;
+                    top: (55/@vw);
+                    left: (88/@vw);
+                    font-size: (15/@vw);
+                }
+                .ans_Left{
+                    top: (56/@vw);
+                    left: (89/@vw);
+                    font-size: (16/@vw);
+                }
+                .sp_content,
+                .sp_content2,
+                .sp_content3{
+                    display: none;
+                }
+                .content {
+                    position: absolute;
+                    bottom: (-2/@vw);
+                    left: (14/@vw);
+                    width: (220/@vw);
+                    line-height: (18/@vw);
+                    font-size: (12/@vw);
+                }
+                .content2 {
+                    position: absolute;
+                    width: (220/@vw);
+                    bottom: -(26/@vw);
+                    left: (8/@vw);
+                    line-height: (20/@vw);
+                    font-size: (12/@vw);
+                    transform : scale(0.95,0.95) ;
+                }
+                .content3 {
+                    position: absolute;
+                    bottom: (27/@vw);
+                    left: (13/@vw);
+                    font-size: (16/@vw);
+                    width: (250/@vw);
+                    .iconfont{
+                        font-size: (22/@vw);
+                    }
+                    .fb,
+                    .ins{
+                        margin-left: (-1/@vw);
+                        display: inline-block;
+                        width: (70/@vw);
+                        height: (22/@vw);
+                        font-size: (15/@vw);
+                    }
+                }
+                .sp_content3{
+                    display: none;
+                }
+            }
+            .contact1:nth-child(1){
+                margin-left: (150/@vw);
+            }
+        }
+        
+    }
+
+
+    .Tel{
+        margin: (27/@vw) auto;
+        display: flex;
+        justify-content: space-around;
+        width: (980/@vw);
+        img{
+            width: (460/@vw);
+            height: (120/@vw);
+        }
+    }
+
+
+
+    // pcのナビゲーションのモジュール
+    .information {
+        
+        position: relative;
+        height: (440/@vw);
+        ul {
+            width: (950/@vw);
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: (165/@vw);
+            top: (-9/@vw);
+            .infor {
+                position: relative;
+                // width: (190/@vw);
+                height: (300/@vw);
+                .topic {
+                    position: absolute;
+                    left: 0;
+                    top: (22/@vw);
+                    font-size: (24/@vw);
+                }
+                ol {
+                    margin-top: (79/@vw);
+                    list-style-type:none;
+                }
+                li {
+                    height: (22/@vw);
+                    font-size: (15/@vw);
+                    margin-bottom: (15/@vw);
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .phusikos_left{
+                margin-left:(-6/@vw);
+            }
+            .infor_left{
+                margin-left:(-12/@vw);
+            }
+            .topic_right{
+                margin-right:(-4/@vw);
+            }
+            .shop_right{
+                margin-right:(2/@vw);
+            }
+            
+        }
+    
+    }
+    
+
+
+
+
+    // pcのrightを説明するモジュール
+    .last {
+        position: relative;
+        left:20;
+        bottom: (85/@vw);
+        width: (1280/@vw);
+        height: (70/@vw);
+        border-top: (1/@vw) solid gray;
+        .icon-logo {
+            position: absolute;
+            left: (163/@vw);
+            top: (5/@vw);
+            font-size: (55/@vw);
+        }
+        .information {
+            position: absolute;
+            top: (20/@vw);
+            left: (265/@vw);
+            height: (30/@vw);
+            font-size: (12/@vw);
+            line-height: (29/@vw);
+        }
+        .follow {
+            position: absolute;
+            top: (27/@vw);
+            right: (165/@vw);
+            font-size: (14/@vw);
+            .icon-icon-facebook {
+                font-size: (22/@vw);
+                margin-right: (6/@vw);
+            }
+            .icon-icon-instagram {
+                font-size: (22/@vw);
+            }
+        }
+    }
+}
+
+
+
+// spのmediaquery---------------
+
+@media (max-width: 1149px){
+    @vw: 3.75vw;
+
+    // ナビゲーション-------------------------
+    header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: (375/@vw);
+        height: (66/@vw);
+        background-color: white;
+        z-index: 1;
+        .top{
+            position: relative;
+            font-size: (8/@vw);
+            color: #044A28;
+            .p1{
+                position: relative;
+                left:(5/@vw);
+                top:(-2/@vw);
+                width: (50/@vw);
+                height: (50/@vw);
+                text-align: center;
+                .icon-caidan{
+                    font-size: (40/@vw);
+                    
+                }
+                .menu{
+                    margin-top: -(15/@vw);
+                    transform: scale(0.95);
+                }
+            }
+            
+            .icon-logo{
+                position: absolute;
+                left:(151.5/@vw);
+                top:(2/@vw);
+                font-size: (45/@vw);
+            }
+            
+            .p2{
+                position: relative;
+                left:(267/@vw);
+                top:(-39/@vw);
+                width: (50/@vw);
+                height: (50/@vw);
+                text-align: center;
+                .icon-icon-login-green{
+                    text-align: center;
+                    font-size: (23/@vw);
+                }
+        
+                .login{
+                    margin-top: (-3/@vw);
+                    margin-right: (-1/@vw);
+                    text-align: center;
+                    // transform: scale(0.8);
+                }
+            }
+            .p3{
+                position: relative;
+                left:(321/@vw);
+                top:(-89/@vw);
+                width: (50/@vw);
+                height: (50/@vw);
+                text-align: center;
+                .icon-icon-cart-green{
+                    text-align: center;
+                    font-size: (23/@vw);
+                }
+        
+                .cart{
+                    margin-top: (-3/@vw);
+                    margin-right: (-1/@vw);
+                    text-align: center;
+                    // transform: scale(0.8);
+                }
+            }
+        }
+    }
+    .title{
+        display: none;
+    }
+
+
+
+    // 商品を紹介するモジュール---------------------
+
+    .Box{
+        position: absolute;
+        top:(67/@vw);
+
+        //図１を紹介するモジュール------------
+
+        .beauty1{
+            position: relative;
+            font-size: (18/@vw);
+            letter-spacing: (1.44/@vw);
+            font-family: 'Yu Mincho';
+            color: #19433F;
+            .img1_1{
+                width: (100vw);
+                height: (100vw);
+
+            // 図１の言葉-----------------------------
+            
+            }
+            .beauty1_1{
+                position: absolute;
+                top:(160.73/@vw);
+                left:(179.93/@vw);
+            }
+            .beauty1_2{
+                position: absolute;
+                top:(190.69/@vw);
+                right:(19.85/@vw);
+            }
+            .beauty1_3{
+                position: absolute;
+                top:(218.69/@vw);
+                right:(19.85/@vw);
+            }
+        }
+
+        //図2を紹介するモジュール------------
+
+        .beauty2{
+            position: relative;
+            font-family: 'Yu Mincho';
+            #pc_beauty2{
+                display:none;
+            }
+            .beauty2_1{
+                position: absolute;
+                left: (21/@vw);
+                top: (25/@vw);
+                width: (233.44/@vw);
+                height: (80/@vw);
+                letter-spacing: (1.44/@vw);
+                font-size: (18/@vw);
+                line-height: (31/@vw);
+                color: #FFFFFF;
+            }
+            .beauty2_2{
+                display: none;
+            }
+            .sp_beauty2_2{
+                position: absolute;
+                left: (24/@vw);
+                top: (277/@vw);
+                width: (327/@vw);
+                height: (76/@vw);
+                font-size: (13/@vw);
+                line-height: (20.5/@vw);
+                color: #044A28;
+            }
+    
+        }
+
+        //図3を紹介するモジュール------------
+
+        .beauty3{
+            position: relative;
+            font-family: 'Yu Mincho';
+            #pc_beauty3{
+                display: none;
+            }
+            .beauty3_1{
+                position: absolute;
+                left: (24/@vw);
+                top: (25/@vw);
+                width: (311.44/@vw);
+                height: (43/@vw);
+                letter-spacing: (1.44/@vw);
+                font-size: (18/@vw);
+                
+                color: #FFFFFF;
+            }
+            .beauty3_2{
+                display: none;
+            }
+            .sp_beauty3_2{
+                position: absolute;
+                left: (24/@vw);
+                top: (90/@vw);
+                width: (334/@vw);
+                height: (45/@vw);
+                font-size: (14/@vw);
+                line-height: (24/@vw);
+                letter-spacing: var(--unnamed-character-spacing-0);
+                color: #FFFFFF;
+            }
+        }
+
+        //図4を紹介するモジュール------------
+
+        .beauty4{
+            position: relative;
+            #pc_beauty4{
+                display: none;
+            }
+            .beauty4_1{
+                display: none;
+            }
+            .sp_beauty4_1{
+                position: absolute;
+                left: (24/@vw);
+                top: (22/@vw);
+                width: (323/@vw);
+                height: (412/@vw);
+                font-size: (12/@vw);
+                text-align: center;
+                line-height: (20/@vw);
+                color: #FFFFFF;
+            }
+            .little_img {
+                position: absolute;
+                top: (465/@vw);
+                left: (29.5/@vw);
+                display: flex;
+                width:(317/@vw);
+                height:(98/@vw);
+                justify-content: space-between;
+                img{
+                    width: (98/@vw);
+                }
+            }
+        }
+
+
+
+
+        // Recpie1,2,3,4,5,6を説明するモジュール-----------------------
+        
+        .recipe{
+            position: relative;
+            margin-left: (24/@vw);
+            margin-top: (25/@vw);
+            // background-color: red;
+            .topic{
+                position: absolute;
+                top:(4/@vw);
+                left:(134/@vw);
+                font-size: (19/@vw);
+                color: #044A28;
+                font-family: 'Optima';
+            }
+            .onerank{
+                position: absolute;
+                left:(73/@vw);
+                top:(41/@vw);
+                font-size: (14/@vw);
+                color: #044A28;
+                font-family: "ヒラギノ角ゴ ProN W3";
+            }
+            .ryouri{
+                position: absolute;
+                top:(71/@vw);
+                li{
+                    float: left;
+                    margin-right: (21/@vw);
+                    position: relative;
+                    width: (153/@vw);
+                    height: (337/@vw);
+                    // background-color: aqua;
+                    Img{
+                        position: absolute;
+                        top: (4/@vw);
+                        left: (0/@vw);
+                        width: (153/@vw);
+                        height: (153/@vw);
+                    }
+                    .recipe1{
+                        position: absolute;
+                        left:0;
+                        top:(164/@vw);
+                        width: (140/@vw);
+                        font-size: (14/@vw);
+                        font-family: 'Yu Mincho';
+                        line-height: (23/@vw);
+                        color: #044A28;
+                    }
+                    .Up{
+                        top:(164/@vw);
+                        line-height: (21/@vw);
+                    }
+                    #pc{
+                        display: none;
+                    }
+                    .recipe1_1{
+                        position: absolute;
+                        left:0;
+                        top:(212/@vw);
+                        width: (153/@vw);
+                        font-size: (12/@vw);
+                        font-family: 'ヒラギノ角ゴ ProN W3';
+                        line-height: (18/@vw);
+                        color: #044A28;
+                    }
+                    .recipe1_1_up{
+                        top:(211/@vw);
+                    }
+                    .up{
+                        top:(208/@vw);
+                    }
+
+                    //moreというボタンを設定するモジュール---------
+
+                    .more{
+                        position: absolute;
+                        left:(17/@vw);
+                        top:(279/@vw);
+                        padding-left: (1/@vw);
+                        padding-top: (2/@vw);
+                        width: (119/@vw);
+                        height: (31/@vw);
+                        background-color: #044A28;
+                        font-size: (13/@vw);
+                        font-family: "ヒラギノ角ゴ ProN W3";
+                        border-radius: (16/@vw);
+                        color: #FFFFFF;
+                        text-align: center;
+                        line-height: (31/@vw);
+                        .icon-arrow-right{
+                            position: absolute;
+                            top:0;
+                            right: (3/@vw);
+                        }
+                        .arrow_down{
+                            top:(1/@vw);
+                            right: (3/@vw);
+                        }
+                    }
+                    .recipe_more_down{
+                        top:(281/@vw);
+                    }
+                    .recipe_more_down3,
+                    .recipe_more_down4{
+                        padding-top: (1/@vw);
+                        top:(281/@vw);
+                    }
+                    .sp_more_top{
+                        padding-top: (1/@vw);
+                        top:(278/@vw);
+                    }
+                    .sp_recipe1_down{
+                        top:(164/@vw);
+                    }
+                    .recipe3_down,
+                    .recipe4_down{
+                        top:(5/@vw);
+                    }
+                    .recipe1_lh{
+                        top:(165/@vw);
+                        left: (-1/@vw);
+                        line-height: (21/@vw);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    // 商品を買うのモジュール---------------
+
+    .Box2{
+        position: absolute;
+        top:(2896/@vw);
+        width: (375/@vw);
+        height: (1439/@vw);
+        background-color: #FAFAFA;
+        .goods{
+            position: relative;
+            margin-left: (23/@vw);
+            margin-top: 0;
+            .sign{
+                position: absolute;
+                left: (80/@vw);
+                top: (24/@vw);
+                width: (170/@vw);
+                height: (42/@vw);
+                background-image: url('../img/sp_targetProductTtlBg.png');
+            }
+            .topic{
+                position: absolute;
+                left:(114/@vw);
+                top:(52/@vw);
+                font-size: (24/@vw);
+                letter-spacing: (1.92/@vw);
+                color: #19433F;
+                font-family: 'Yu Mincho';
+            }
+            .img1{
+                position: absolute;
+                left: (1/@vw);
+                top: (99/@vw);
+                width: (327/@vw);
+                height:(327/@vw);
+            }
+            .condition{
+                position: absolute;
+                left:(1/@vw);
+                top:(455/@vw);
+                .condition1{
+                    float: left;
+                    margin-right: (10/@vw);
+                    width: (114/@vw);
+                    height: (25/@vw);
+                    border:(1/@vw) solid red;
+                    color: red;
+                    font-size: (12/@vw);
+                    font-family:'Yu Mincho';
+                    text-align: center;
+                    line-height: (25/@vw);
+                }
+                .condition2{
+                    float: left;
+                    margin-top: (1/@vw);
+                    margin-right: (10/@vw);
+                    width: (76/@vw);
+                    height: (24/@vw);
+                    background-color: #D7B8DB;
+                    color: white;
+                    font-size: (12/@vw);
+                    font-family:'Yu Mincho';
+                    text-align: center;
+                    line-height: (26/@vw);
+                }
+
+                .condition3{
+                    float: left;
+                    margin-top: (1/@vw);
+                    width: (68/@vw);
+                    height: (24/@vw);
+                    background-color: #EFDC83;
+                    color: white;
+                    font-size: (12/@vw);
+                    font-family:'Yu Mincho';
+                    text-align: center;
+                    line-height: (25/@vw);
+                }
+            }
+            .number{
+                position: absolute;
+                top:(501/@vw);
+                left:(5/@vw);
+                font-size: (12/@vw);
+                font-family:'Yu Mincho';
+            }
+            .set{
+                position: absolute;
+                left:(1/@vw);
+                top:(521/@vw);
+                font-size: (18/@vw);
+                font-family:'Yu Mincho';
+                color: #19433F;
+                letter-spacing: NaNpx;
+                span{
+                    font-size: (14/@vw);
+                }
+            }
+            .no{
+                position: absolute;
+                left:(4/@vw);
+                top:(548/@vw);
+                font-family: 'Yu Mincho';
+                font-size: (14/@vw);
+                letter-spacing: NaNpx;
+                color: #19433F;
+            }
+            .price{
+                position: absolute;
+                top:(581/@vw);
+                left:(5/@vw);
+                font-size: (28/@vw);
+                font-family:"ヒラギノ角ゴ ProN W3";
+                color: #9D0000;
+                span{
+                    color: #000000;
+                    font-size: (16/@vw);
+                }
+            }
+            .down{
+                position: absolute;
+                top:(596/@vw);
+                left:(175/@vw);
+                font-size: (14/@vw);
+                font-family:"ヒラギノ角ゴ ProN W3";
+                color: #000000;
+                text-decoration: line-through;
+            }
+            #pc_intro{
+                display: none;
+            }
+            .intro{
+                position: absolute;
+                top:(630/@vw);
+                // width: (325/@vw);
+                font-size: (13/@vw);
+                font-family:"ヒラギノ角ゴ ProN W3";
+                color: #000000;
+                line-height: (23/@vw);
+                .limit{
+                    margin-top: (7/@vw);
+                    display: block;
+                    color:#9D0000;
+                }
+            }
+            .btn{
+                position: absolute;
+                left:(59/@vw);
+                top:(799/@vw);
+                width: (200/@vw);
+                height: (34/@vw);
+                padding-top: (7/@vw); 
+                padding-left: (1/@vw);
+                background-color: #9D0000;
+                font-size: (14/@vw);
+                font-family: "ヒラギノ角ゴ ProN W3";
+                border-radius: (16/@vw);
+                color: #FFFFFF;
+                
+                .icon-arrow-right{
+                    position: absolute;
+                    top:(5/@vw);
+                    right: (8/@vw);
+                    font-size: (17/@vw);
+                }
+            }
+            .other{
+                display: none;
+            }
+            .sp_other{
+                position: relative;
+                top:(874/@vw);
+                li{
+                    float: left;
+                    margin-right: (21/@vw);
+                    position: relative;
+                    width: (153/@vw);
+                    height: (224/@vw);
+                    img{
+                        height: (150/@vw);
+                    }
+                    .sp_other1_up,
+                    .sp_other2_up{
+                        top:(158/@vw);
+                    }
+                    .sp_other3_lf,
+                    .sp_other4_lf{
+                        line-height: (20/@vw);
+                    }
+                    a{
+                        position: absolute;
+                        top:(163/@vw);
+                        left: (1/@vw);
+                        width: (153/@vw);
+                        text-align: center;
+                        color: #044A28;
+                        font-size: (12/@vw);
+                        font-family: 'ヒラギノ角ゴ ProN W6';
+                        font-weight:700;
+                        line-height: (20/@vw);
+                    }
+                }
+            }
+            .advertisement{
+                margin-top: (878/@vw);
+                width: (327/@vw);
+                height: (74/@vw);
+            }
+        }
+    }
+
+
+
+
+
+    // 企業の連絡方法のモジュール-------------------
+
+    .question{
+        position: absolute;
+        top:(4338/@vw);
+        width: (375/@vw);
+        // height: (1400/@vw);
+        height: (1150/@vw);
+        .contact{
+            display: flex;
+            flex-wrap: wrap;
+            .Up{
+                border-right: (1/@vw) solid gray;
+            }
+            .Left{
+                border-bottom: (1/@vw) solid gray;
+            }
+            .Right{
+                border-bottom: (1/@vw) solid gray;
+            }
+            .Down{
+                border-right: (1/@vw) solid gray;
+            }
+            li{
+                position: relative;
+                width: (187.5/@vw);
+                height: (196/@vw);
+                background-color: rgb(213, 206, 206);
+
+                //logoを設定すること----------------
+
+                .ic{
+                    display: flex;
+		            align-items: center;
+                    margin-top: (13/@vw);
+                    margin-left: (29/@vw);
+                    width: (180/@vw);
+                    height: (50/@vw);
+                    .icon {
+                        float: left;
+                        margin-top: (-2/@vw);
+                        margin-left: (-1/@vw);
+                        width: (40/@vw);
+                        height: (40/@vw);
+                        line-height: (50/@vw);
+                        fill: currentColor;
+                        // overflow: hidden;
+                    }
+                    .ans{
+                        margin-top: (9/@vw);
+                        margin-left: (10/@vw);
+                        float: left;
+                        width: (96/@vw);
+                        font-size: (14/@vw);
+                    }
+                    .ans2_left{
+                        margin-left: (11/@vw);
+                    }
+                    .ans3_left{
+                        margin-left: (13/@vw);
+                    }
+                    .ans_Left{
+                        margin-top: (4/@vw);
+                        margin-left: (10/@vw);
+                        font-size: (17/@vw);
+                    }
+                    .icon2_down{
+                        margin-top: (0/@vw);
+                    }
+                    .icon4_up{
+                        margin-top: (-6/@vw);
+                    }
+                }
+
+                //logoの位置を調整すること--------------------
+
+                .ic_Left{
+                    margin-top: (12/@vw);
+                    margin-left: (17/@vw);
+                }
+                .ic_Left2{
+                    margin-top: (14/@vw); 
+                    margin-left: (30/@vw);
+                }
+                .ic_Left3{
+                    margin-top: (16/@vw); 
+                    margin-left: (18/@vw);
+                }
+
+                //pcの内容を設定する----------------------
+
+                .content,
+                .content2,
+                .content3{
+                    display: none;
+                }
+
+                //spの内容を設定する----------------------
+
+                .sp_content,
+                .sp_content2{
+                    position: absolute;
+                    left: (24/@vw);
+                    top: (71/@vw);
+                    width: (160/@vw);
+                    height: (60/@vw);
+                    font-size: (12/@vw);
+                    transform:scale(0.95);
+                    line-height: (21/@vw);
+                }
+
+                //内容の位置を調整すること-------------------
+
+                .sp_content_Left{
+                    left:(12/@vw);
+                }
+                .sp_content2_Top{
+                    top: (72/@vw);
+                }
+
+                //spの内容を設定すること----------------------
+
+                .sp_content3{
+                    margin-top: (26/@vw);
+                    margin-left: (18/@vw);
+                    width: (150/@vw);
+                    height: (40/@vw);
+                    font-size: (18/@vw);
+                    .sp_content3_1{
+                        .icon-icon-facebook{
+                            display:block;
+                            float: left;
+                            margin-left: (-2/@vw);
+                            line-height: (14/@vw);
+                            font-size: (22/@vw);
+                        }
+                        .fb{
+                            display:block;
+                            margin-left: (10/@vw);
+                            float: left;
+                            line-height: (15/@vw);
+                            font-size: (16/@vw);
+                        }
+                    }
+                    .sp_content3_2{
+                        margin-top: (10/@vw);
+                        .icon-icon-instagram{
+                            display:block;
+                            float: left;
+                            margin-left: (-2/@vw);
+                            line-height: (18/@vw);
+                            font-size: (22/@vw);
+                        }
+                        .ins{
+                            display:block;
+                            margin-left: (10/@vw);
+                            float: left;
+                            line-height: (18/@vw);
+                            font-size: (16/@vw);
+                        }
+                    }
+                }
+            }
+        }
+        .tel{
+            position: relative;
+            top: (8/@vw);
+            left: (15/@vw);
+            width: (345/@vw);
+            height: (91/@vw);
+        }
+        .mail{
+            position: relative;
+            top: (32/@vw);
+            left: (15/@vw);
+            width: (345/@vw);
+            height: (91/@vw);
+        }
+        
+        //pc部分のインフォメーションを削除すること
+
+        .last,
+        .information{
+            display: none;
+        }
+
+
+
+
+
+
+
+        // spの企業のインフォメーションのナビゲーション
+        .dropdown{
+            margin-top: (62/@vw);
+            .accordion {
+                display: block;
+                background-color: #044A28;
+                color: #FFFFFF;
+                cursor: pointer;
+                padding-top: (10/@vw);
+                padding-left: (16/@vw);
+                width: (375/@vw);
+                height: (57/@vw);
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: (23/@vw);
+                text-decoration: none;
+                transition: 0.4s;
+                z-index: 999;
+            }
+
+            .infor_size{
+                font-size: (24/@vw);
+            }
+
+            //右の"+"を設定すること
+
+            .accordion:after {
+                content: "\02795";
+                font-size: (13/@vw);
+                padding-top: (7/@vw);
+                padding-right: (6/@vw);
+                color: #777;
+                float: right;
+            }
+
+            //ボタンを押したら、"+"から"-"へ変更すること-------
+
+            .active:after {
+                content: "\2796";
+            }
+        
+            //詳しい内容を設定すること-------------------------
+            .panel {
+                display: none;
+                padding: 0 (18/@vw);
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                    a {
+                        font-size: (12/@vw);
+                        color: black;
+                        padding: (12/@vw) (16/@vw);
+                        text-decoration: none;
+                        display: block;
+                }
+            }
+
+            //ボタンを押したら詳しい内容を展開すること
+
+            .show{
+                display: block;
+            }
+        }
+    
+    
+    
+    }
+
+
+
+
+    // 企業のrightのモジュール
+    .right{
+        position: relative;
+        top:(6/@vw);
+        width: (375/@vw);
+        height: (130/@vw);
+        // background-color: yellow;
+        .icon-logo{
+            position: absolute;
+            left: (152/@vw);
+            font-size: (54/@vw);
+        }
+        .explain{
+            position: absolute;
+            left: (24/@vw);
+            bottom:(30/@vw);
+            font-size: (12/@vw);
+            transform: scale(0.87);
+        }
+    }
+    
+    
+}
+

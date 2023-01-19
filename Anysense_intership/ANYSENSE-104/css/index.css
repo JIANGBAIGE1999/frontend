@@ -1,0 +1,1427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+@media (min-width: 1150px) {
+  .title {
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    height: 8.28125vw;
+    border-bottom: 0.078125vw solid hsl(0, 10%, 74%);
+    font-family: 'Yu Mincho';
+  }
+  .title .icon-logo {
+    position: absolute;
+    left: 12.5vw;
+    bottom: 0.859375vw;
+    font-size: 4.375vw;
+  }
+  .title .title_box {
+    position: absolute;
+    top: 1.484375vw;
+    right: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 31.953125vw;
+  }
+  .title .title_box .login {
+    display: flex;
+    align-items: center;
+    font-size: 1.015625vw;
+  }
+  .title .title_box .login a {
+    color: gray;
+  }
+  .title .title_box .icon-icon-cart-green {
+    width: 1.40625vw;
+    height: 1.40625vw;
+    margin-top: -0.625vw;
+    margin-right: 0.15625vw;
+    font-size: 1.40625vw;
+  }
+  .title .introduce {
+    position: absolute;
+    top: 4.296875vw;
+    right: 10.9375vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70.3125vw;
+    font-size: 1.640625vw;
+  }
+  .title .introduce li {
+    margin-left: 0.78125vw;
+  }
+  .title .introduce li a {
+    text-decoration: none;
+  }
+  .dropdown,
+  .right,
+  header {
+    display: none;
+  }
+  .Box {
+    margin: 5.15625vw 11.71875vw;
+    width: 76.5625vw;
+    height: 396.5625vw;
+  }
+  .Box .beauty1 {
+    position: relative;
+    font-size: 3.125vw;
+    font-weight: normal;
+    font-family: Yu Mincho;
+    letter-spacing: 0.25vw;
+    color: #19433F;
+    opacity: 1;
+  }
+  .Box .beauty1 .beauty1_1 {
+    position: absolute;
+    top: 33.28984375vw;
+    right: 3.515625vw;
+  }
+  .Box .beauty1 .beauty1_2 {
+    float: right;
+    position: absolute;
+    top: 38.103125vw;
+    right: 3.515625vw;
+    height: 3.90625vw;
+  }
+  .Box .beauty1 .beauty1_3 {
+    position: absolute;
+    top: 42.790625vw;
+    right: 3.515625vw;
+    height: 3.90625vw;
+  }
+  .Box .beauty2 {
+    position: relative;
+    font-family: Yu Mincho;
+  }
+  .Box .beauty2 #sp_beauty2,
+  .Box .beauty2 .sp_beauty2_2 {
+    display: none;
+  }
+  .Box .beauty2 .beauty2_1 {
+    position: absolute;
+    top: 38.671875vw;
+    left: 4.21875vw;
+    width: 34.43125vw;
+    font-size: 2.65625vw;
+    letter-spacing: 0.2125vw;
+    line-height: 4.53125vw;
+    color: #FFFFFF;
+  }
+  .Box .beauty2 .beauty2_2 {
+    position: absolute;
+    top: 54.375vw;
+    left: 4.375vw;
+    font-size: 1.5625vw;
+    line-height: 2.65625vw;
+    color: #044A28;
+  }
+  .Box .beauty3 {
+    position: relative;
+    font-family: Yu Mincho;
+  }
+  .Box .beauty3 #sp_beauty3 {
+    display: none;
+  }
+  .Box .beauty3 .beauty3_1 {
+    position: absolute;
+    top: 6.953125vw;
+    left: 4.375vw;
+    width: 43.28125vw;
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw;
+    line-height: 4.21875vw;
+    color: #FFFFFF;
+  }
+  .Box .beauty3 .sp_beauty3_2 {
+    display: none;
+  }
+  .Box .beauty3 .beauty3_2 {
+    position: absolute;
+    top: 16.5625vw;
+    left: 4.140625vw;
+    font-size: 1.328125vw;
+    text-align: left;
+    color: #FFFFFF;
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+  .Box .beauty4 {
+    position: relative;
+    font-family: "ヒラギノ角ゴ ProN W3";
+  }
+  .Box .beauty4 .sp_beauty4_1 {
+    display: none;
+  }
+  .Box .beauty4 #sp_beauty4 {
+    display: none;
+  }
+  .Box .beauty4 .beauty4_1 {
+    position: absolute;
+    top: 11.953125vw;
+    left: 9.0625vw;
+    font-size: 1.25vw;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 2.03125vw;
+  }
+  .Box .beauty4 .beauty4_1 .interval_2,
+  .Box .beauty4 .beauty4_1 .interval_3 {
+    margin-top: 2.265625vw;
+  }
+  .Box .beauty4 .beauty4_1 .interval_4 {
+    margin-top: 4.375vw;
+  }
+  .Box .beauty4 .little_img {
+    position: absolute;
+    top: 47.34375vw;
+    left: 10.078125vw;
+    display: flex;
+    width: 56.796875vw;
+    height: 17.65625vw;
+    justify-content: space-between;
+  }
+  .Box .recipe {
+    position: relative;
+    margin-top: 4.375vw;
+    width: 76.5625vw;
+    height: 87.109375vw;
+  }
+  .Box .recipe img {
+    width: 23.75vw;
+    height: 23.828125vw;
+  }
+  .Box .recipe .topic {
+    position: absolute;
+    top: -0.46875vw;
+    left: 35.234375vw;
+    font-size: 2.03125vw;
+    color: #044A28;
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+  .Box .recipe .onerank {
+    position: absolute;
+    top: 2.890625vw;
+    left: 30.15625vw;
+    font-size: 1.25vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    color: #044A28;
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+  .Box .recipe .ryouri {
+    position: absolute;
+    top: 9.6875vw;
+    left: 0.15625vw;
+    width: 80.859375vw;
+  }
+  .Box .recipe .ryouri li {
+    position: relative;
+    float: left;
+    margin-right: 2.578125vw;
+    width: 23.75vw;
+    height: 41.328125vw;
+    font-family: 'Yu Mincho';
+    color: #044A28;
+  }
+  .Box .recipe .ryouri li .recipe1 {
+    position: absolute;
+    top: 25.390625vw;
+    left: -0.078125vw;
+    font-size: 1.40625vw;
+  }
+  .Box .recipe .ryouri li .recipe1_up {
+    top: 25.3125vw;
+    left: 0vw;
+  }
+  .Box .recipe .ryouri li #sp {
+    display: none;
+  }
+  .Box .recipe .ryouri li .recipe1_1 {
+    position: absolute;
+    top: 28.203125vw;
+    width: 23.75vw;
+    font-size: 1.171875vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    line-height: 2.1875vw;
+  }
+  .Box .recipe .ryouri li .recipe1_1_down {
+    top: 28.28125vw;
+  }
+  .Box .recipe .ryouri li .more {
+    position: absolute;
+    top: 33.59375vw;
+    left: 14.53125vw;
+    width: 9.296875vw;
+    height: 2.421875vw;
+    background: #044A28 0% 0% no-repeat padding-box;
+    border-radius: 1.25vw;
+    font-size: 1.015625vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 2.421875vw;
+  }
+  .Box .recipe .ryouri li .more .f {
+    float: left;
+    margin-left: 3.125vw;
+  }
+  .Box .recipe .ryouri li .more .icon-arrow-right {
+    float: right;
+    margin-left: 1.640625vw;
+    top: 33.4375vw;
+    left: 8.3125vw;
+    opacity: 1;
+    color: white;
+  }
+  .Box .recipe .ryouri li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .Box .recipe .ryouri .nav_left {
+    left: -0.15625vw;
+  }
+  .goods {
+    position: relative;
+    width: 100vw;
+    height: 87.96875vw;
+    background-color: #FAFAFA;
+  }
+  .goods .sign {
+    position: absolute;
+    left: 40vw;
+    top: 5.15625vw;
+    width: 18.984375vw;
+    height: 5.15625vw;
+    background-image: url('../../img/targetProductTtlBg.png');
+  }
+  .goods .topic {
+    position: absolute;
+    left: 44.6875vw;
+    top: 6.875vw;
+    font-family: Yu Mincho;
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw;
+    color: #19433F;
+  }
+  .goods .condition {
+    position: absolute;
+    left: 40.625vw;
+    top: 14.375vw;
+  }
+  .goods .condition .condition1 {
+    float: left;
+    margin-right: 0.78125vw;
+    width: 8.90625vw;
+    height: 1.953125vw;
+    border: 0.078125vw solid #9D0000;
+    font-family: Yu Mincho;
+    font-size: 0.9375vw;
+    text-align: center;
+    line-height: 2.03125vw;
+    color: #9D0000;
+  }
+  .goods .condition .condition2 {
+    float: left;
+    margin-right: 0.78125vw;
+    width: 6.09375vw;
+    height: 1.953125vw;
+    background-color: #D7B8DB;
+    font-family: Yu Mincho;
+    font-size: 0.9375vw;
+    text-align: center;
+    line-height: 2.03125vw;
+    color: #FFFFFF;
+  }
+  .goods .condition .condition3 {
+    float: left;
+    margin-right: 0.78125vw;
+    width: 5.3125vw;
+    height: 1.953125vw;
+    background-color: #EFDC83;
+    font-family: Yu Mincho;
+    font-size: 0.9375vw;
+    text-align: center;
+    line-height: 2.03125vw;
+    color: #FFFFFF;
+  }
+  .goods .img1 {
+    width: 25vw;
+    height: 25.15625vw;
+    position: absolute;
+    left: 11.71875vw;
+    top: 14.375vw;
+  }
+  .goods .number {
+    position: absolute;
+    left: 40.625vw;
+    top: 17.734375vw;
+    font-family: Yu Mincho;
+    font-size: 1.09375vw;
+    color: #000000;
+  }
+  .goods .set {
+    position: absolute;
+    left: 40.625vw;
+    top: 19.6875vw;
+    font-family: Yu Mincho;
+    font-size: 2.1875vw;
+    color: #19433F;
+  }
+  .goods .no {
+    position: absolute;
+    left: 58.59375vw;
+    top: 20.3125vw;
+    font-family: Yu Mincho;
+    font-size: 1.5625vw;
+    color: #19433F;
+  }
+  .goods .price {
+    position: absolute;
+    left: 40.625vw;
+    top: 23.28125vw;
+    font-family: "Yu Mincho";
+    font-size: 2.421875vw;
+    color: #9D0000;
+  }
+  .goods .price span {
+    margin-left: 0.546875vw;
+    font-size: 1.40625vw;
+    color: #000000;
+  }
+  .goods .down {
+    position: absolute;
+    left: 54.140625vw;
+    top: 24.453125vw;
+    font-size: 1.09375vw;
+    color: #000000;
+    text-decoration: line-through;
+  }
+  .goods #sp_intro {
+    display: none;
+  }
+  .goods .intro {
+    position: absolute;
+    left: 40.625vw;
+    top: 27.578125vw;
+    width: 47.65625vw;
+    height: 5vw;
+    line-height: 1.875vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    font-size: 1.09375vw;
+    color: #000000;
+  }
+  .goods .intro .limit {
+    display: block;
+    margin-top: 0.390625vw;
+    color: #9D0000;
+  }
+  .goods .btn {
+    position: relative;
+    left: 40.625vw;
+    top: 36.71875vw;
+    padding-left: 1.5625vw;
+    width: 15.625vw;
+    height: 2.65625vw;
+    background-color: #9D0000;
+    border-radius: 1.25vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    font-size: 1.09375vw;
+    color: #FFFFFF;
+  }
+  .goods .btn .icon-arrow-right {
+    float: right;
+    text-align: center;
+    margin-right: -0.078125vw;
+    opacity: 1;
+    color: white;
+  }
+  .goods .sp_other {
+    display: none;
+  }
+  .goods .other {
+    position: absolute;
+    left: 10.546875vw;
+    top: 43.59375vw;
+  }
+  .goods .other li {
+    position: relative;
+    float: left;
+    width: 18.203125vw;
+    height: 24.453125vw;
+    margin-left: 1.25vw;
+    /* background-color: green; */
+  }
+  .goods .other li img {
+    position: absolute;
+    left: 0;
+    top: 0.390625vw;
+    width: 18.203125vw;
+    height: 18.203125vw;
+  }
+  .goods .other a {
+    position: absolute;
+    top: 19.921875vw;
+    left: 0.078125vw;
+    width: 18.203125vw;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-size: 1.015625vw;
+    text-align: center;
+    color: #19433F;
+    /* background-color: red; */
+  }
+  .goods .advertisement {
+    position: absolute;
+    left: 11.640625vw;
+    bottom: 8.828125vw;
+    width: 76.5625vw;
+    height: 10.546875vw;
+  }
+  .question {
+    margin-top: -4.6875vw;
+    width: 100vw;
+    height: 67.890625vw;
+  }
+  .question .background {
+    position: relative;
+    width: 100vw;
+    height: 18.75vw;
+    background-color: #dbd5d5;
+  }
+  .question .background .contact1 {
+    position: relative;
+    float: left;
+    margin-left: 1.5625vw;
+    width: 17.5vw;
+    height: 14.453125vw;
+    font-family: "ヒラギノ角ゴ ProN W6";
+  }
+  .question .background .contact1 .icon {
+    margin-top: 2.890625vw;
+    margin-left: 1.25vw;
+    width: 4.6875vw;
+    height: 4.6875vw;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  .question .background .contact1 .ans {
+    position: absolute;
+    top: 4.296875vw;
+    left: 6.875vw;
+    font-size: 1.171875vw;
+  }
+  .question .background .contact1 .ans_Left {
+    top: 4.375vw;
+    left: 6.953125vw;
+    font-size: 1.25vw;
+  }
+  .question .background .contact1 .sp_content,
+  .question .background .contact1 .sp_content2,
+  .question .background .contact1 .sp_content3 {
+    display: none;
+  }
+  .question .background .contact1 .content {
+    position: absolute;
+    bottom: -0.15625vw;
+    left: 1.09375vw;
+    width: 17.1875vw;
+    line-height: 1.40625vw;
+    font-size: 0.9375vw;
+  }
+  .question .background .contact1 .content2 {
+    position: absolute;
+    width: 17.1875vw;
+    bottom: -2.03125vw;
+    left: 0.625vw;
+    line-height: 1.5625vw;
+    font-size: 0.9375vw;
+    transform: scale(0.95, 0.95);
+  }
+  .question .background .contact1 .content3 {
+    position: absolute;
+    bottom: 2.109375vw;
+    left: 1.015625vw;
+    font-size: 1.25vw;
+    width: 19.53125vw;
+  }
+  .question .background .contact1 .content3 .iconfont {
+    font-size: 1.71875vw;
+  }
+  .question .background .contact1 .content3 .fb,
+  .question .background .contact1 .content3 .ins {
+    margin-left: -0.078125vw;
+    display: inline-block;
+    width: 5.46875vw;
+    height: 1.71875vw;
+    font-size: 1.171875vw;
+  }
+  .question .background .contact1 .sp_content3 {
+    display: none;
+  }
+  .question .background .contact1:nth-child(1) {
+    margin-left: 11.71875vw;
+  }
+  .Tel {
+    margin: 2.109375vw auto;
+    display: flex;
+    justify-content: space-around;
+    width: 76.5625vw;
+  }
+  .Tel img {
+    width: 35.9375vw;
+    height: 9.375vw;
+  }
+  .information {
+    position: relative;
+    height: 34.375vw;
+  }
+  .information ul {
+    width: 74.21875vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 12.890625vw;
+    top: -0.703125vw;
+  }
+  .information ul .infor {
+    position: relative;
+    height: 23.4375vw;
+  }
+  .information ul .infor .topic {
+    position: absolute;
+    left: 0;
+    top: 1.71875vw;
+    font-size: 1.875vw;
+  }
+  .information ul .infor ol {
+    margin-top: 6.171875vw;
+    list-style-type: none;
+  }
+  .information ul .infor li {
+    height: 1.71875vw;
+    font-size: 1.171875vw;
+    margin-bottom: 1.171875vw;
+  }
+  .information ul .infor li a {
+    text-decoration: none;
+  }
+  .information ul .phusikos_left {
+    margin-left: -0.46875vw;
+  }
+  .information ul .infor_left {
+    margin-left: -0.9375vw;
+  }
+  .information ul .topic_right {
+    margin-right: -0.3125vw;
+  }
+  .information ul .shop_right {
+    margin-right: 0.15625vw;
+  }
+  .last {
+    position: relative;
+    left: 20;
+    bottom: 6.640625vw;
+    width: 100vw;
+    height: 5.46875vw;
+    border-top: 0.078125vw solid gray;
+  }
+  .last .icon-logo {
+    position: absolute;
+    left: 12.734375vw;
+    top: 0.390625vw;
+    font-size: 4.296875vw;
+  }
+  .last .information {
+    position: absolute;
+    top: 1.5625vw;
+    left: 20.703125vw;
+    height: 2.34375vw;
+    font-size: 0.9375vw;
+    line-height: 2.265625vw;
+  }
+  .last .follow {
+    position: absolute;
+    top: 2.109375vw;
+    right: 12.890625vw;
+    font-size: 1.09375vw;
+  }
+  .last .follow .icon-icon-facebook {
+    font-size: 1.71875vw;
+    margin-right: 0.46875vw;
+  }
+  .last .follow .icon-icon-instagram {
+    font-size: 1.71875vw;
+  }
+}
+@media (max-width: 1149px) {
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 17.6vw;
+    background-color: white;
+    z-index: 1;
+  }
+  header .top {
+    position: relative;
+    font-size: 2.13333333vw;
+    color: #044A28;
+  }
+  header .top .p1 {
+    position: relative;
+    left: 1.33333333vw;
+    top: -0.53333333vw;
+    width: 13.33333333vw;
+    height: 13.33333333vw;
+    text-align: center;
+  }
+  header .top .p1 .icon-caidan {
+    font-size: 10.66666667vw;
+  }
+  header .top .p1 .menu {
+    margin-top: -4vw;
+    transform: scale(0.95);
+  }
+  header .top .icon-logo {
+    position: absolute;
+    left: 40.4vw;
+    top: 0.53333333vw;
+    font-size: 12vw;
+  }
+  header .top .p2 {
+    position: relative;
+    left: 71.2vw;
+    top: -10.4vw;
+    width: 13.33333333vw;
+    height: 13.33333333vw;
+    text-align: center;
+  }
+  header .top .p2 .icon-icon-login-green {
+    text-align: center;
+    font-size: 6.13333333vw;
+  }
+  header .top .p2 .login {
+    margin-top: -0.8vw;
+    margin-right: -0.26666667vw;
+    text-align: center;
+  }
+  header .top .p3 {
+    position: relative;
+    left: 85.6vw;
+    top: -23.73333333vw;
+    width: 13.33333333vw;
+    height: 13.33333333vw;
+    text-align: center;
+  }
+  header .top .p3 .icon-icon-cart-green {
+    text-align: center;
+    font-size: 6.13333333vw;
+  }
+  header .top .p3 .cart {
+    margin-top: -0.8vw;
+    margin-right: -0.26666667vw;
+    text-align: center;
+  }
+  .title {
+    display: none;
+  }
+  .Box {
+    position: absolute;
+    top: 17.86666667vw;
+  }
+  .Box .beauty1 {
+    position: relative;
+    font-size: 4.8vw;
+    letter-spacing: 0.384vw;
+    font-family: 'Yu Mincho';
+    color: #19433F;
+  }
+  .Box .beauty1 .img1_1 {
+    width: 100vw;
+    height: 100vw;
+  }
+  .Box .beauty1 .beauty1_1 {
+    position: absolute;
+    top: 42.86133333vw;
+    left: 47.98133333vw;
+  }
+  .Box .beauty1 .beauty1_2 {
+    position: absolute;
+    top: 50.85066667vw;
+    right: 5.29333333vw;
+  }
+  .Box .beauty1 .beauty1_3 {
+    position: absolute;
+    top: 58.31733333vw;
+    right: 5.29333333vw;
+  }
+  .Box .beauty2 {
+    position: relative;
+    font-family: 'Yu Mincho';
+  }
+  .Box .beauty2 #pc_beauty2 {
+    display: none;
+  }
+  .Box .beauty2 .beauty2_1 {
+    position: absolute;
+    left: 5.6vw;
+    top: 6.66666667vw;
+    width: 62.25066667vw;
+    height: 21.33333333vw;
+    letter-spacing: 0.384vw;
+    font-size: 4.8vw;
+    line-height: 8.26666667vw;
+    color: #FFFFFF;
+  }
+  .Box .beauty2 .beauty2_2 {
+    display: none;
+  }
+  .Box .beauty2 .sp_beauty2_2 {
+    position: absolute;
+    left: 6.4vw;
+    top: 73.86666667vw;
+    width: 87.2vw;
+    height: 20.26666667vw;
+    font-size: 3.46666667vw;
+    line-height: 5.46666667vw;
+    color: #044A28;
+  }
+  .Box .beauty3 {
+    position: relative;
+    font-family: 'Yu Mincho';
+  }
+  .Box .beauty3 #pc_beauty3 {
+    display: none;
+  }
+  .Box .beauty3 .beauty3_1 {
+    position: absolute;
+    left: 6.4vw;
+    top: 6.66666667vw;
+    width: 83.05066667vw;
+    height: 11.46666667vw;
+    letter-spacing: 0.384vw;
+    font-size: 4.8vw;
+    color: #FFFFFF;
+  }
+  .Box .beauty3 .beauty3_2 {
+    display: none;
+  }
+  .Box .beauty3 .sp_beauty3_2 {
+    position: absolute;
+    left: 6.4vw;
+    top: 24vw;
+    width: 89.06666667vw;
+    height: 12vw;
+    font-size: 3.73333333vw;
+    line-height: 6.4vw;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: #FFFFFF;
+  }
+  .Box .beauty4 {
+    position: relative;
+  }
+  .Box .beauty4 #pc_beauty4 {
+    display: none;
+  }
+  .Box .beauty4 .beauty4_1 {
+    display: none;
+  }
+  .Box .beauty4 .sp_beauty4_1 {
+    position: absolute;
+    left: 6.4vw;
+    top: 5.86666667vw;
+    width: 86.13333333vw;
+    height: 109.86666667vw;
+    font-size: 3.2vw;
+    text-align: center;
+    line-height: 5.33333333vw;
+    color: #FFFFFF;
+  }
+  .Box .beauty4 .little_img {
+    position: absolute;
+    top: 124vw;
+    left: 7.86666667vw;
+    display: flex;
+    width: 84.53333333vw;
+    height: 26.13333333vw;
+    justify-content: space-between;
+  }
+  .Box .beauty4 .little_img img {
+    width: 26.13333333vw;
+  }
+  .Box .recipe {
+    position: relative;
+    margin-left: 6.4vw;
+    margin-top: 6.66666667vw;
+  }
+  .Box .recipe .topic {
+    position: absolute;
+    top: 1.06666667vw;
+    left: 35.73333333vw;
+    font-size: 5.06666667vw;
+    color: #044A28;
+    font-family: 'Optima';
+  }
+  .Box .recipe .onerank {
+    position: absolute;
+    left: 19.46666667vw;
+    top: 10.93333333vw;
+    font-size: 3.73333333vw;
+    color: #044A28;
+    font-family: "ヒラギノ角ゴ ProN W3";
+  }
+  .Box .recipe .ryouri {
+    position: absolute;
+    top: 18.93333333vw;
+  }
+  .Box .recipe .ryouri li {
+    float: left;
+    margin-right: 5.6vw;
+    position: relative;
+    width: 40.8vw;
+    height: 89.86666667vw;
+  }
+  .Box .recipe .ryouri li Img {
+    position: absolute;
+    top: 1.06666667vw;
+    left: 0vw;
+    width: 40.8vw;
+    height: 40.8vw;
+  }
+  .Box .recipe .ryouri li .recipe1 {
+    position: absolute;
+    left: 0;
+    top: 43.73333333vw;
+    width: 37.33333333vw;
+    font-size: 3.73333333vw;
+    font-family: 'Yu Mincho';
+    line-height: 6.13333333vw;
+    color: #044A28;
+  }
+  .Box .recipe .ryouri li .Up {
+    top: 43.73333333vw;
+    line-height: 5.6vw;
+  }
+  .Box .recipe .ryouri li #pc {
+    display: none;
+  }
+  .Box .recipe .ryouri li .recipe1_1 {
+    position: absolute;
+    left: 0;
+    top: 56.53333333vw;
+    width: 40.8vw;
+    font-size: 3.2vw;
+    font-family: 'ヒラギノ角ゴ ProN W3';
+    line-height: 4.8vw;
+    color: #044A28;
+  }
+  .Box .recipe .ryouri li .recipe1_1_up {
+    top: 56.26666667vw;
+  }
+  .Box .recipe .ryouri li .up {
+    top: 55.46666667vw;
+  }
+  .Box .recipe .ryouri li .more {
+    position: absolute;
+    left: 4.53333333vw;
+    top: 74.4vw;
+    padding-left: 0.26666667vw;
+    padding-top: 0.53333333vw;
+    width: 31.73333333vw;
+    height: 8.26666667vw;
+    background-color: #044A28;
+    font-size: 3.46666667vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    border-radius: 4.26666667vw;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 8.26666667vw;
+  }
+  .Box .recipe .ryouri li .more .icon-arrow-right {
+    position: absolute;
+    top: 0;
+    right: 0.8vw;
+  }
+  .Box .recipe .ryouri li .more .arrow_down {
+    top: 0.26666667vw;
+    right: 0.8vw;
+  }
+  .Box .recipe .ryouri li .recipe_more_down {
+    top: 74.93333333vw;
+  }
+  .Box .recipe .ryouri li .recipe_more_down3,
+  .Box .recipe .ryouri li .recipe_more_down4 {
+    padding-top: 0.26666667vw;
+    top: 74.93333333vw;
+  }
+  .Box .recipe .ryouri li .sp_more_top {
+    padding-top: 0.26666667vw;
+    top: 74.13333333vw;
+  }
+  .Box .recipe .ryouri li .sp_recipe1_down {
+    top: 43.73333333vw;
+  }
+  .Box .recipe .ryouri li .recipe3_down,
+  .Box .recipe .ryouri li .recipe4_down {
+    top: 1.33333333vw;
+  }
+  .Box .recipe .ryouri li .recipe1_lh {
+    top: 44vw;
+    left: -0.26666667vw;
+    line-height: 5.6vw;
+  }
+  .Box2 {
+    position: absolute;
+    top: 772.26666667vw;
+    width: 100vw;
+    height: 383.73333333vw;
+    background-color: #FAFAFA;
+  }
+  .Box2 .goods {
+    position: relative;
+    margin-left: 6.13333333vw;
+    margin-top: 0;
+  }
+  .Box2 .goods .sign {
+    position: absolute;
+    left: 21.33333333vw;
+    top: 6.4vw;
+    width: 45.33333333vw;
+    height: 11.2vw;
+    background-image: url('../img/sp_targetProductTtlBg.png');
+  }
+  .Box2 .goods .topic {
+    position: absolute;
+    left: 30.4vw;
+    top: 13.86666667vw;
+    font-size: 6.4vw;
+    letter-spacing: 0.512vw;
+    color: #19433F;
+    font-family: 'Yu Mincho';
+  }
+  .Box2 .goods .img1 {
+    position: absolute;
+    left: 0.26666667vw;
+    top: 26.4vw;
+    width: 87.2vw;
+    height: 87.2vw;
+  }
+  .Box2 .goods .condition {
+    position: absolute;
+    left: 0.26666667vw;
+    top: 121.33333333vw;
+  }
+  .Box2 .goods .condition .condition1 {
+    float: left;
+    margin-right: 2.66666667vw;
+    width: 30.4vw;
+    height: 6.66666667vw;
+    border: 0.26666667vw solid red;
+    color: red;
+    font-size: 3.2vw;
+    font-family: 'Yu Mincho';
+    text-align: center;
+    line-height: 6.66666667vw;
+  }
+  .Box2 .goods .condition .condition2 {
+    float: left;
+    margin-top: 0.26666667vw;
+    margin-right: 2.66666667vw;
+    width: 20.26666667vw;
+    height: 6.4vw;
+    background-color: #D7B8DB;
+    color: white;
+    font-size: 3.2vw;
+    font-family: 'Yu Mincho';
+    text-align: center;
+    line-height: 6.93333333vw;
+  }
+  .Box2 .goods .condition .condition3 {
+    float: left;
+    margin-top: 0.26666667vw;
+    width: 18.13333333vw;
+    height: 6.4vw;
+    background-color: #EFDC83;
+    color: white;
+    font-size: 3.2vw;
+    font-family: 'Yu Mincho';
+    text-align: center;
+    line-height: 6.66666667vw;
+  }
+  .Box2 .goods .number {
+    position: absolute;
+    top: 133.6vw;
+    left: 1.33333333vw;
+    font-size: 3.2vw;
+    font-family: 'Yu Mincho';
+  }
+  .Box2 .goods .set {
+    position: absolute;
+    left: 0.26666667vw;
+    top: 138.93333333vw;
+    font-size: 4.8vw;
+    font-family: 'Yu Mincho';
+    color: #19433F;
+    letter-spacing: NaNpx;
+  }
+  .Box2 .goods .set span {
+    font-size: 3.73333333vw;
+  }
+  .Box2 .goods .no {
+    position: absolute;
+    left: 1.06666667vw;
+    top: 146.13333333vw;
+    font-family: 'Yu Mincho';
+    font-size: 3.73333333vw;
+    letter-spacing: NaNpx;
+    color: #19433F;
+  }
+  .Box2 .goods .price {
+    position: absolute;
+    top: 154.93333333vw;
+    left: 1.33333333vw;
+    font-size: 7.46666667vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    color: #9D0000;
+  }
+  .Box2 .goods .price span {
+    color: #000000;
+    font-size: 4.26666667vw;
+  }
+  .Box2 .goods .down {
+    position: absolute;
+    top: 158.93333333vw;
+    left: 46.66666667vw;
+    font-size: 3.73333333vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    color: #000000;
+    text-decoration: line-through;
+  }
+  .Box2 .goods #pc_intro {
+    display: none;
+  }
+  .Box2 .goods .intro {
+    position: absolute;
+    top: 168vw;
+    font-size: 3.46666667vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    color: #000000;
+    line-height: 6.13333333vw;
+  }
+  .Box2 .goods .intro .limit {
+    margin-top: 1.86666667vw;
+    display: block;
+    color: #9D0000;
+  }
+  .Box2 .goods .btn {
+    position: absolute;
+    left: 15.73333333vw;
+    top: 213.06666667vw;
+    width: 53.33333333vw;
+    height: 9.06666667vw;
+    padding-top: 1.86666667vw;
+    padding-left: 0.26666667vw;
+    background-color: #9D0000;
+    font-size: 3.73333333vw;
+    font-family: "ヒラギノ角ゴ ProN W3";
+    border-radius: 4.26666667vw;
+    color: #FFFFFF;
+  }
+  .Box2 .goods .btn .icon-arrow-right {
+    position: absolute;
+    top: 1.33333333vw;
+    right: 2.13333333vw;
+    font-size: 4.53333333vw;
+  }
+  .Box2 .goods .other {
+    display: none;
+  }
+  .Box2 .goods .sp_other {
+    position: relative;
+    top: 233.06666667vw;
+  }
+  .Box2 .goods .sp_other li {
+    float: left;
+    margin-right: 5.6vw;
+    position: relative;
+    width: 40.8vw;
+    height: 59.73333333vw;
+  }
+  .Box2 .goods .sp_other li img {
+    height: 40vw;
+  }
+  .Box2 .goods .sp_other li .sp_other1_up,
+  .Box2 .goods .sp_other li .sp_other2_up {
+    top: 42.13333333vw;
+  }
+  .Box2 .goods .sp_other li .sp_other3_lf,
+  .Box2 .goods .sp_other li .sp_other4_lf {
+    line-height: 5.33333333vw;
+  }
+  .Box2 .goods .sp_other li a {
+    position: absolute;
+    top: 43.46666667vw;
+    left: 0.26666667vw;
+    width: 40.8vw;
+    text-align: center;
+    color: #044A28;
+    font-size: 3.2vw;
+    font-family: 'ヒラギノ角ゴ ProN W6';
+    font-weight: 700;
+    line-height: 5.33333333vw;
+  }
+  .Box2 .goods .advertisement {
+    margin-top: 234.13333333vw;
+    width: 87.2vw;
+    height: 19.73333333vw;
+  }
+  .question {
+    position: absolute;
+    top: 1156.8vw;
+    width: 100vw;
+    height: 306.66666667vw;
+  }
+  .question .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .question .contact .Up {
+    border-right: 0.26666667vw solid gray;
+  }
+  .question .contact .Left {
+    border-bottom: 0.26666667vw solid gray;
+  }
+  .question .contact .Right {
+    border-bottom: 0.26666667vw solid gray;
+  }
+  .question .contact .Down {
+    border-right: 0.26666667vw solid gray;
+  }
+  .question .contact li {
+    position: relative;
+    width: 50vw;
+    height: 52.26666667vw;
+    background-color: #d5cece;
+  }
+  .question .contact li .ic {
+    display: flex;
+    align-items: center;
+    margin-top: 3.46666667vw;
+    margin-left: 7.73333333vw;
+    width: 48vw;
+    height: 13.33333333vw;
+  }
+  .question .contact li .ic .icon {
+    float: left;
+    margin-top: -0.53333333vw;
+    margin-left: -0.26666667vw;
+    width: 10.66666667vw;
+    height: 10.66666667vw;
+    line-height: 13.33333333vw;
+    fill: currentColor;
+  }
+  .question .contact li .ic .ans {
+    margin-top: 2.4vw;
+    margin-left: 2.66666667vw;
+    float: left;
+    width: 25.6vw;
+    font-size: 3.73333333vw;
+  }
+  .question .contact li .ic .ans2_left {
+    margin-left: 2.93333333vw;
+  }
+  .question .contact li .ic .ans3_left {
+    margin-left: 3.46666667vw;
+  }
+  .question .contact li .ic .ans_Left {
+    margin-top: 1.06666667vw;
+    margin-left: 2.66666667vw;
+    font-size: 4.53333333vw;
+  }
+  .question .contact li .ic .icon2_down {
+    margin-top: 0vw;
+  }
+  .question .contact li .ic .icon4_up {
+    margin-top: -1.6vw;
+  }
+  .question .contact li .ic_Left {
+    margin-top: 3.2vw;
+    margin-left: 4.53333333vw;
+  }
+  .question .contact li .ic_Left2 {
+    margin-top: 3.73333333vw;
+    margin-left: 8vw;
+  }
+  .question .contact li .ic_Left3 {
+    margin-top: 4.26666667vw;
+    margin-left: 4.8vw;
+  }
+  .question .contact li .content,
+  .question .contact li .content2,
+  .question .contact li .content3 {
+    display: none;
+  }
+  .question .contact li .sp_content,
+  .question .contact li .sp_content2 {
+    position: absolute;
+    left: 6.4vw;
+    top: 18.93333333vw;
+    width: 42.66666667vw;
+    height: 16vw;
+    font-size: 3.2vw;
+    transform: scale(0.95);
+    line-height: 5.6vw;
+  }
+  .question .contact li .sp_content_Left {
+    left: 3.2vw;
+  }
+  .question .contact li .sp_content2_Top {
+    top: 19.2vw;
+  }
+  .question .contact li .sp_content3 {
+    margin-top: 6.93333333vw;
+    margin-left: 4.8vw;
+    width: 40vw;
+    height: 10.66666667vw;
+    font-size: 4.8vw;
+  }
+  .question .contact li .sp_content3 .sp_content3_1 .icon-icon-facebook {
+    display: block;
+    float: left;
+    margin-left: -0.53333333vw;
+    line-height: 3.73333333vw;
+    font-size: 5.86666667vw;
+  }
+  .question .contact li .sp_content3 .sp_content3_1 .fb {
+    display: block;
+    margin-left: 2.66666667vw;
+    float: left;
+    line-height: 4vw;
+    font-size: 4.26666667vw;
+  }
+  .question .contact li .sp_content3 .sp_content3_2 {
+    margin-top: 2.66666667vw;
+  }
+  .question .contact li .sp_content3 .sp_content3_2 .icon-icon-instagram {
+    display: block;
+    float: left;
+    margin-left: -0.53333333vw;
+    line-height: 4.8vw;
+    font-size: 5.86666667vw;
+  }
+  .question .contact li .sp_content3 .sp_content3_2 .ins {
+    display: block;
+    margin-left: 2.66666667vw;
+    float: left;
+    line-height: 4.8vw;
+    font-size: 4.26666667vw;
+  }
+  .question .tel {
+    position: relative;
+    top: 2.13333333vw;
+    left: 4vw;
+    width: 92vw;
+    height: 24.26666667vw;
+  }
+  .question .mail {
+    position: relative;
+    top: 8.53333333vw;
+    left: 4vw;
+    width: 92vw;
+    height: 24.26666667vw;
+  }
+  .question .last,
+  .question .information {
+    display: none;
+  }
+  .question .dropdown {
+    margin-top: 16.53333333vw;
+  }
+  .question .dropdown .accordion {
+    display: block;
+    background-color: #044A28;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-top: 2.66666667vw;
+    padding-left: 4.26666667vw;
+    width: 100vw;
+    height: 15.2vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 6.13333333vw;
+    text-decoration: none;
+    transition: 0.4s;
+    z-index: 999;
+  }
+  .question .dropdown .infor_size {
+    font-size: 6.4vw;
+  }
+  .question .dropdown .accordion:after {
+    content: "\02795";
+    font-size: 3.46666667vw;
+    padding-top: 1.86666667vw;
+    padding-right: 1.6vw;
+    color: #777;
+    float: right;
+  }
+  .question .dropdown .active:after {
+    content: "\2796";
+  }
+  .question .dropdown .panel {
+    display: none;
+    padding: 0 4.8vw;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .question .dropdown .panel a {
+    font-size: 3.2vw;
+    color: black;
+    padding: 3.2vw 4.26666667vw;
+    text-decoration: none;
+    display: block;
+  }
+  .question .dropdown .show {
+    display: block;
+  }
+  .right {
+    position: relative;
+    top: 1.6vw;
+    width: 100vw;
+    height: 34.66666667vw;
+  }
+  .right .icon-logo {
+    position: absolute;
+    left: 40.53333333vw;
+    font-size: 14.4vw;
+  }
+  .right .explain {
+    position: absolute;
+    left: 6.4vw;
+    bottom: 8vw;
+    font-size: 3.2vw;
+    transform: scale(0.87);
+  }
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 考察 -->
+<!-- 1.効率作業を行うために、html一つのモジュールを作った時に、pcとspのcssの部分を同時に作ります。-->
+<!-- 2.PerfectPixelを使えば作業時間を３５％を短縮できると思う -->
+<!-- 3.業務ごとにbootstrapのグリッドレイアウトを使えば効率的に作業できると思う。 -->
+
+<!-- 不足 -->
+<!-- １．classの名前をうまく付けなくて、他のエンジニアさんに迷惑をかける可能性がある -->
+<!-- ２．今回は効率的に作業するために、vwとmedia共に利用して作業を行った。
+しかし、vwはAndroid4.4+とios8+が必要であるが、remはAndroid2.1+とios6+だけで実現できるので、
+互換性を考えた上で、remを利用したほうがと思う。 -->
+<!-- ３．今回はclassだけを利用してcssを書いた。しかし、
+他のエンジニアが分かりやすいコードになったら、idも重要である。 -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANY_BENKYOKAI_104</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/font/iconfont.css">
+    <script src="./css/font/iconfont.js"></script>
+</head>
+
+<body>
+    <!-- 最初のpcのナビゲーションのモジュール。 -->
+    <div class="title">
+        <ul class="title_box">
+            <li class="login"><a href="#">はじめての方へ</a></li>
+            <li class="login"><a href="#">会員ログイン</a></li>
+            <li class="login">
+                <div class="iconfont icon-icon-cart-green"> </div><a href="#">カートを見る</a></li>
+        </ul>
+        <span class="iconfont icon-logo"></span>
+        <ul class="introduce">
+            <li><a href="#">products</a></li>
+            <li><a href="#">about phusikos</a></li>
+            <li><a href="#">gift</a></li>
+            <li><a href="#">topics</a></li>
+            <li><a href="#">company</a></li>
+            <li><a href="#">shop</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- 最初のspのナビゲーションのモジュール。 -->
+    <header>
+        <div class="top">
+            <div class="p1">
+                <a href="#" class="iconfont icon-caidan"></a>
+                <p class="menu">メニュー</p>
+            </div>
+            <span class="iconfont icon-logo"></span>
+            <div class="p2">
+                <a href="#" class="iconfont icon-icon-login-green"></a>
+                <p class="login">ログイン</p>
+            </div>
+            <div class="p3">
+                <a href="#" class="iconfont icon-icon-cart-green"></a>
+                <p class="cart">カート</p>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- 商品を説明するモジュール。 -->
+    <div class="Box">
+        <ul>
+
+            <!-- 商品を説明する図１ -->
+
+            <li class="beauty1">
+                <img src="./img/bnr.jpg" alt="">
+                <p class="beauty1_1">ギリシャで生まれた</p>
+                <p class="beauty1_2">濃厚エキストラ</p>
+                <p class="beauty1_3">ヴァージンオイル</p>
+            </li>
+
+            <!-- 商品を説明する図２ -->
+
+            <li class="beauty2">
+                <img src="./img/bnr2.jpg" alt="" id="pc_beauty2">
+                <img src="./img/bnr2_sp.jpg" alt="" id="sp_beauty2">
+                <p class="beauty2_1">「コロネイキ種」のみ使用 クセのない爽やかな風味と 豊かな味わい</p>
+                <p class="beauty2_2">
+                    <span>豊かな深緑色で、全く油っぽさを感じない<span>
+                    <br>
+                    <span>オリーブオイルは、ハーブに似た香りや、</span>
+                    <br>
+                    <span>たくましいアロマの香りを持っており、</span>
+                    <br>
+                    <span>フルーティーな味わいで、</span>
+                    <br>
+                    <span>ピリッとしたスパイシーな後味が</span>
+                    <br>
+                    <span>口全体に広がります。</span>
+                </p>
+                <p class="sp_beauty2_2">
+                    豊かな深緑色で、全く油っぽさを感じないオリーブオイルは、ハーブに似た香りや、たくましいアロマの香りを持っており、フルーティーな味わいで、ピリッとしたスパイシーな後味が口全体に広がります。
+                </p>
+
+            </li>
+
+            <!-- 商品を説明する図３ -->
+
+            <li class="beauty3">
+                <img src="./img/bnr3.jpg" alt="" id="pc_beauty3">
+                <img src="./img/bnr3_sp.jpg" alt="" id="sp_beauty3">
+                <p class="beauty3_1">本物の味を伝えたいという想いからつくられたフシコス
+                </p>
+                <p class="beauty3_2">標高350～500メートルとクレタ島の中でも厳しい自然環境で栽培するシラキス家のオリーブ。
+                </p>
+                <p class="sp_beauty3_2">標高350～500メートルとクレタ島の中でも<br>厳しい自然環境で栽培するシラキス家のオリーブ。
+                </p>
+            </li>
+
+            <!-- 商品を説明する図４ -->
+
+            <li class="beauty4">
+                <img src="./img/bnr4.jpg" alt="" id="pc_beauty4">
+                <img src="./img/bnr4_sp.jpg" alt="" id="sp_beauty4">
+                <div class="beauty4_1">
+                    オリーブオイルの等級でもっとも優れたエキストラヴァージンオリーブオイル。
+                    <br>その中でも世界一と称えられるギリシャ・クレタ島のオリーブオイルは、
+                    <br>品質が高く、美味しいためほとんどが現地で消費され、日本へ輸入されることはありませんでした。
+                    <p class="interval_2">日本のみなさまにも本物のエキストラヴァージンオイルを味わってほしいという想いから、
+                        <br>フシコスは、その希少なオイルをファミリーとの深い絆により、日本へ空輸で運ぶことを実現しました。</p>
+                    <p class="interval_3">ここでしか味わえない本物の味は、大切な方への贈り物にとても喜ばれています。
+                        <br>もちろん、自然農法でノンフィルター製法です。</p>
+                    <p class="interval_4">『フシコス』は、クレタ島に住むシラキスファミリーの子供から大人まで毎日食べているオリーブオイル
+                        <br>だから、健康を気遣う方にも、お料理好きな方にもお子様がいらっしゃるご家庭でも、安心してお召し上
+                        <br>がりいただけます。</p>
+                </div>
+                <p class="sp_beauty4_1">オリーブオイルの等級でもっとも優れた<br>エキストラヴァージンオリーブオイル。<br>その中でも世界一と称えられるギリシャ・クレタ島の<br>オリーブオイルは、品質が高く、美味しいため<br>ほとんどが現地で消費され、<br>日本へ輸入されることはありませんでした。<br><br>日本のみなさまにも本物のエキストラヴァージンオイルを<br>味わってほしいという想いから、<br>フシコスは、その希少なオイルをファミリーとの<br>深い絆により、日本へ空輸で運ぶことを実現しました。<br><br>ここでしか味わえない本物の味は、<br>大切な方への贈り物にとても喜ばれています。<br>もちろん、自然農法でノンフィルター製法です。<br><br>『フシコス』は、クレタ島に住むシラキスファミリーの<br>子供から大人まで毎日食べているオリーブオイルだから、<br>健康を気遣う方にも、お料理好きな方にも<br>お子様がいらっしゃるご家庭でも、安心して<br>お召し上がりいただけます。</p>
+                <ul class="little_img">
+                    <li><img src="./img/bnrRecipe.jpg"></li>
+                    <li><img src="./img/bnrRecipe2.jpg"></li>
+                    <li><img src="./img/bnrRecipe3.jpg"></li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+
+
+
+        <!-- Recipeを説明するモジュール -->
+
+        <div class="recipe">
+            <i class="topic">Recipe</i>
+            <div class="onerank">
+                ワンランク上のお手軽レシピ
+            </div>
+            <ul class="ryouri">
+
+                <!-- Recipe1を紹介するモジュール -->
+
+                <li>
+                    <img src="./img/recipe.jpg">
+                    <p class="recipe1">アクアパッツァ</p>
+                    <p class="recipe1_1 recipe1_1_up">とっても簡単！栄養満点で食卓も華やか。おもてなしにぴったりのレシピです！</p>
+                    <a href="#" class="more">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right arrow_down"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Recipe２を紹介するモジュール -->
+
+                <li>
+                    <img src="./img/recipe2.jpg">
+                    <p class="recipe1">カマンベールと牡蠣のアヒージョ</p>
+                    <p id="pc" class="recipe1_1">寒い時期は、具沢山のグツグツとろーりアヒージョで温まる食卓にしてみませんか。</p>
+                    <p id="sp" class="recipe1_1">漬けておくと味がしっかりと染み込み、オリーブオイルがお肉をコーティング</p>
+                    <a href="#" class="more recipe_more_down">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right arrow_down"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Recipe３を紹介するモジュール -->
+
+                <li>
+                    <img src="./img/recipe3.jpg" class="recipe3_down">
+                    <p class="recipe1 recipe1_lh">ジューシーハンバーグ</p>
+                    <p class="recipe1_1">お店で食べるようなジューシーなハンバーグに仕上がります。</p>
+                    <a href="#" class="more recipe_more_down3">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Recipe４を紹介するモジュール -->
+
+                <li class="nav_left">
+                    <img src="./img/recipe4.jpg" class="recipe4_down">
+                    <p class="recipe1 recipe1_up recipe1_lh">すぐ出来る！紫芋でポテトサラダ</p>
+                    <p class="recipe1_1 recipe1_1_down">紫芋でいつもと違うポテトサラダ♪色が違うだけでとってもおしゃれ</p>
+                    <a href="#" class="more recipe_more_down4">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Recipe５を紹介するモジュール -->
+
+                <li class="nav_left">
+                    <img src="./img/recipe5.jpg">
+                    <p class="recipe1 Up recipe1_up sp_recipe1_down">梅オリーブオイル粥</p>
+                    <p class="recipe1_1 up recipe1_1_down">オリーブオイルや好きな具材をトッピングするだけで色々な味を楽しめます。</p>
+                    <a href="#" class="more sp_more_top">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Recipe６を紹介するモジュール -->
+
+                <li class="nav_left">
+                    <img src="./img/recipe6.jpg">
+                    <p class="recipe1 Up recipe1_up">栄養満点カリフラワーのスープ</p>
+                    <p class="recipe1_1 up recipe1_1_down">ビタミンC含有量はキャベツの2倍、栄養満点のカリフラワースープ。</p>
+                    <a href="#" class="more sp_more_top">
+                        <div class="f">MORE
+                            <div class="iconfont icon-arrow-right"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 商品を買うモジュール -->
+
+    <div class="Box2">
+        <div class="goods">
+            <div class="sign"></div>
+            <p class="topic">対象商品</p>
+            <ul class="condition">
+                <li class="condition1">初回購入者様限定</li>
+                <li class="condition2">40%OFF</li>
+                <li class="condition3">おすすめ</li>
+            </ul>
+            <img src="./img/minisize-set.jpg" class="img1">
+            <p class="number">商品コード： PSKS063</p>
+            <p class="set">ミニサイズセット</p>
+            <p class="no">(200g/箱なし・ポアラー付き)</p>
+            <p class="price">1,980 <span>円(税込)</span></p>
+            <p class="down">3,240 円(税込)</p>
+            <p class="intro" id="pc_intro">ギリシャ・クレタ島でシラキスファミリーが代々受け継いできた樹齢200年を超えるオリーブの 木から採れる希少なコロネイキ種を使用しています。クレタ島で栽培・収穫から採油まで行った 最高品質のエキストラヴァージンオリーブオイルです。
+                <br><span class="limit">※こちらは初回購入者様限定の商品です。</span>
+            </p>
+            <p class="intro" id="sp_intro">ギリシャ・クレタ島でシラキスファミリーが代々受け<br>継いできた樹齢200年を超えるオリーブの 木から採れる<br>希少なコロネイキ種を使用しています。クレタ島で栽<br>培・収穫から採油まで行った 最高品質のエキストラヴ<br>ァージンオリーブオイルです。
+                <br><span class="limit">※こちらは初回購入者様限定の商品です。</span>
+            </p>
+            <a href="#" class="btn">
+                初回購入はこちら
+                <span class="iconfont icon-arrow-right"></span>
+            </a>
+            <ul class="other">
+                <li>
+                    <img src="./img/olieveoil135.jpg" alt="">
+                    <a href="#">遮光瓶(135g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/minisize-set.jpg" alt="">
+                    <a href="#">ミニサイズ(200g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/olieveoil450.jpg" alt="">
+                    <a href="#">レギュラーサイズ(450g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/three.jpg" alt="">
+                    <a href="#">定期お届け便はこちら ></a>
+                </li>
+            </ul>
+
+            <ul class="sp_other">
+                <li>
+                    <img src="./img/olieveoil135.jpg" alt="">
+                    <a href="#" class="sp_other1_up">遮光瓶<br>(135g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/minisize-set.jpg" alt="">
+                    <a href="#" class="sp_other2_up">ミニサイズ<br>(200g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/olieveoil450.jpg" alt="">
+                    <a href="#" class="sp_other3_lf">レギュラーサイズ<br>(450g)はこちら ></a>
+                </li>
+                <li>
+                    <img src="./img/three.jpg" alt="">
+                    <a href="#" class="sp_other4_lf">定期お届け便<br>はこちら ></a>
+                </li>
+            </ul>
+            <img src="./img/ber-05ccc.png" alt="" class="advertisement">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 企業を連絡するのモジュール -->
+
+    <div class="question">
+        <div class="background">
+            <ul class="contact">
+
+                <!-- 連絡方法１を紹介するモジュール -->
+
+                <li class="contact1 Left Up">
+                    <div class="ic">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-icon-question"></use>
+                        </svg>
+                        <p class="ans">よくあるご質問</p>
+                    </div>
+                    <p class="content">お客様よりいただいたご質問をこちら<br>でご紹介いたしております。お問い合わ<br>せの前に一度ご確認ください。</p>
+                    <p class="sp_content">お客様よりいただいたご質<br>問をこちらでご紹介いたし<br>ております。お問い合わせ<br>の前に一度ご確認くださ<br>い。</p>
+                </li>
+
+                <!-- 連絡方法２を紹介するモジュール -->
+
+                <li class="contact1 Right">
+                    <div class="ic ic_Left">
+                        <svg class="icon icon2_down" aria-hidden="true">
+                            <use xlink:href="#icon-icon-contact"></use>
+                        </svg>
+                        <p class="ans ans2_left">お問い合わせ</p>
+                    </div>
+                    <p class="content">お使い頂く際の疑問点や不安な<br>点、定期便のご変更依頼もこちらま<br>で。お気軽にお問い合わせください。</p>
+                    <p class="sp_content sp_content_Left">お使いいただく際の疑問点<br>や不安な点、定期便のご変<br>更依頼もこちらまで。お気<br>軽にお問い合わせくださ<br>い。</p>
+                </li>
+
+                <!-- 連絡方法３を紹介するモジュール -->
+
+                <li class="contact1 Down">
+                    <div class="ic ic_Left2">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-icon-mail"></use>
+                        </svg>
+                        <p class="ans ans3_left">メルマガ登録</p>
+                    </div>
+                    <p class="content2">フシコスよりお届けするニュースレター<br>登録はこちら。オリーブオイルに関する<br>情報やおいしいレシビをお届けいたし<br>ます。</p>
+                    <p class="sp_content2 sp_content2_Top">フシコスよりお届けするニ<br>ュースレター登録はこち<br>ら。オリーブオイルに関する<br>情報やおいしいレシビをお<br>届けいたします。</p>
+                </li>
+
+                <!-- 連絡方法４を紹介するモジュール -->
+
+                <li class="contact1">
+                    <div class="ic ic_Left3">
+                        <svg class="icon icon4_up" aria-hidden="true">
+                            <use xlink:href="#icon-icon-sns"></use>
+                        </svg>
+                        <p class="ans ans_Left">SNS</p>
+                    </div>
+                    <p class="content3"><span class="iconfont icon-icon-facebook"></span>&ensp; <span class="fb">facebook</span> <span class="iconfont icon-icon-instagram"></span>&ensp;<span class="ins">Instagram</span></p>
+                    <div class="sp_content3">
+                        <div class="sp_content3_1">
+                            <span class="iconfont icon-icon-facebook"></span>&ensp;&ensp;<span class="fb">facebook</span>
+                        </div>
+                        <div class="sp_content3_2">
+                            <span class="iconfont icon-icon-instagram"></span>&ensp;&ensp;<span class="ins">Instagram</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="Tel">
+            <img src="./img/tel.png" alt="" class="tel">
+            <img src="./img/mail.png" alt="" class="mail">
+        </div>
+
+
+
+
+        <!-- pcの企業のインフォメーションのナビゲーション -->
+
+        <div class="information">
+            <ul>
+                <li class="infor">
+                    <p class="topic">products</p>
+                    <ol>
+                        <li><a href="#">商品一覧</a></li>
+                        <li><a href="#">期間限定商品</a></li>
+                        <li><a href="">ミニサイズ</a></li>
+                        <li><a href="#">レギュラーサイズ</a></li>
+                        <li><a href="#">定期お届け便</a></li>
+                        <li><a href="#">ギフト商品</a></li>
+                        <li><a href="#">雑貨&調味料</a></li>
+                    </ol>
+                </li>
+                <li class="infor phusikos_left">
+                    <p class="topic">about phusikos</p>
+                    <ol>
+                        <li><a href="#">ブランドストーリー&ensp;&ensp;&ensp;&ensp;</a></li>
+                        <li><a href="#">フシコスの想い</a></li>
+                        <li><a href="#">フシコスの由来</a></li>
+                        <li><a href="#">フシコスの品質</a></li>
+                        <li><a href="#">フシコスの農園より</a></li>
+                        <li><a href="#">ポアラーについて</a></li>
+                    </ol>
+                </li>
+                <li class="infor infor_left">
+                    <p class="topic">information</p>
+                    <ol>
+                        <li><a href="#">会員ログイン&ensp;&ensp;&ensp;&ensp;</a></li>
+                        <li><a href="#">マイページ</a></li>
+                        <li><a href="#">定期について</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ol>
+                </li>
+                <li class="infor topic_right">
+                    <p class="topic">topics</p>
+                    <ol>
+                        <li><a href="#">オリーブオイルの豆知識</a></li>
+                        <li><a href="#">よくあるご質問</a></li>
+                        <li><a href="#">お客様の声</a></li>
+                    </ol>
+                </li>
+                <li class="infor shop_right">
+                    <p class="topic">shop</p>
+                    <ol>
+                        <li><a href="#">店舗のご案内</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <!-- spの企業のインフォメーションのナビゲーション -->
+        <div class="dropdown">
+            <a class="accordion">products</a>
+            <div class="panel">
+                <a href="#">商品一覧</a>
+                <a href="#">期間限定商品</a>
+                <a href="#">ミニサイズ</a>
+                <a href="#">レギュラーサイズ</a>
+                <a href="#">定期お届け便</a>
+                <a href="#">ギフト商品</a>
+                <a href="#">雑貨&調味料</a>
+            </div>
+
+            <a class="accordion">about phusikos</a>
+            <div class="panel">
+                <a href="#">ブランドストーリー</a>
+                <a href="#">フシコスの想い</a>
+                <a href="#">フシコスの由来</a>
+                <a href="#">フシコスの品質</a>
+                <a href="#">フシコスの農園より</a>
+                <a href="#">ポアラーについて</a>
+            </div>
+
+            <a class="accordion infor_size">information</a>
+            <div class="panel">
+                <a href="#">会員ログイン</a>
+                <a href="#">マイページ</a>
+                <a href="#">定期について</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+
+            <a class="accordion">topics</a>
+            <div class="panel">
+                <a href="#">オリーブオイルの豆知識</a>
+                <a href="#">よくあるご質問</a>
+                <a href="#">お客様の声</a>
+            </div>
+
+            <a class="accordion">shop</a>
+            <div class="panel">
+                <a href="#">店舗のご案内</a>
+            </div>
+        </div>
+
+
+
+
+        <!-- 企業のrightのモジュール -->
+        <div class="last">
+            <span class="iconfont icon-logo"></span>
+            <p class="information">会社概要&ensp;&ensp;特定商取引法に基づく表記&ensp;&ensp;プライバシーポリシー<br>Copyright&ensp;(c)&ensp;&ensp;2021&ensp;CRETE&ensp;PSYLLAKIS&ensp;CO.&ensp;ALL&ensp;Right&ensp;Reserved.</p>
+            <p class="follow">Follow Us&ensp;:&thinsp;&thinsp;
+                <a href="#" class="iconfont icon-icon-facebook"></a>
+                <a href="#" class="iconfont icon-icon-instagram"></a>
+            </p>
+
+        </div>
+
+        <div class="right">
+            <span class="iconfont icon-logo"></span>
+            <p class="explain">Copyright(C) 2021 CRETE PSYLLAKIS CO. ALL Right Reserved.</p>
+        </div>
+
+    </div>
+
+
+
+    <!-- spの企業のインフォメーションのナビゲーションを実行するコード -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                panel.classList.toggle("show");
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
