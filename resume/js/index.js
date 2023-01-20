@@ -130,6 +130,8 @@ $("#sp_profile").click(function() {
     return false;
 });
 
+// project-----------------------------------------------------
+
 var modal_trigger = document.getElementsByClassName("modal-trigger");
 var modal = document.getElementsByClassName("modal");
 var modal_content = document.getElementsByClassName("modal-content");
@@ -144,3 +146,76 @@ for(let i = 0;i < modal_trigger.length;i++){
         }
     }
 }
+
+
+const programmingSkillSet = document.getElementById('programmingSkillSet');
+  var myChart = new Chart(programmingSkillSet, {
+    type: 'radar',
+    data: {
+      labels: ["HTML/CSS", "JavaScript", "jQuery", "Vue.js/Vue CLI", "SASS/LESS","WordPress"],
+      datasets: [{
+        label: "Front-end",
+        data: [3, 3, 2, 2, 3, 2],
+        backgroundColor: "rgba(235,101,101,0.5)",
+      }]
+    },
+    options: {
+        scales: {
+          r: {
+            max: 5,        //グラフの最大値
+            min: 0,        //グラフの最小値
+            ticks: {
+              stepSize: 1  //目盛間隔
+            }
+          }
+        },
+      }
+  });
+
+  const infraSkillSet = document.getElementById('infraSkillSet');
+  var myChart = new Chart(infraSkillSet, {
+    type: 'radar',
+    data: {
+      labels: ["Numpy", "Pytorch", "Tensorflow", "Django", "Pandas","Matplotlib"],
+      datasets: [{
+        label: "AI Devlop",
+        data: [3, 2, 2, 1, 3, 3],
+        backgroundColor: "rgba(160,208,108,0.5)",
+      }]
+    },
+    options: {
+        scales: {
+          r: {
+            max: 5,        //グラフの最大値
+            min: 0,        //グラフの最小値
+            ticks: {
+              stepSize: 1  //目盛間隔
+            }
+          }
+        },
+      }
+  });
+
+  const interests = document.getElementById('interests');
+  var myChart = new Chart(interests, {
+    type: 'radar',
+    data: {
+      labels: ["Linux", "Git/Github", "Npm"],
+      datasets: [{
+        label: "DevOps",
+        data: [1, 3, 2],
+        backgroundColor: "rgba(142,164,207,0.5)",
+      }]
+    },
+    options: {
+        scales: {
+          r: {
+            max: 5,        //グラフの最大値
+            min: 0,        //グラフの最小値
+            ticks: {
+              stepSize: 1  //目盛間隔
+            }
+          }
+        },
+      }
+  });
