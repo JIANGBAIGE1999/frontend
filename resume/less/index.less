@@ -1,0 +1,119 @@
+// out: ../css/index.css
+
+@import 'base';
+
+
+
+
+@media (min-width: 1180px) {
+
+
+    @vw: 12.8vw;
+    .button-collapse,
+    .side-nav,
+    .mobile{
+        display: none;
+    }
+    .fixed{
+        position: fixed;
+        width: (1280/@vw);
+        height: (76/@vw);
+        background-color: #f9f4f4;
+        .default{
+            height: (78/@vw);
+            #logo-container{
+                margin-left: (150/@vw);
+            }
+            img{
+                width: (78/@vw);
+                height: (78/@vw);
+            }
+            .right{
+                float: right;
+                display: flex;
+                // width: 600px;
+                color: black;
+                margin-right: (150/@vw);
+                li{ 
+                    justify-content:space-between;
+                    font-size: (26/@vw);
+                    float: left;
+                    a{
+                        font-size: (16/@vw);
+                        line-height: (30/@vw);
+                        display:inline-block;
+                        height: (78/@vw);
+                        padding: (26/@vw) (15/@vw);
+                        text-decoration: none;
+                    }
+                }
+                .dropdown{
+                    .dropdown-list {
+                        display: none;
+                        position: absolute;
+                        top:(78/@vw);
+                        background-color: #e07070;
+                        min-width: (110/@vw);
+                        box-shadow: (0/@vw) (8/@vw) (16/@vw) (0/@vw) rgba(0,0,0,0.2);
+                        li{
+                            text-align: center;
+                            font-style: (16/@vw);
+                            a {
+                                display: block;
+                                width: (142/@vw);
+                                color: white;
+                                padding: (20/@vw) (16/@vw);
+                                text-decoration: none;
+                                text-align: center;
+                            }
+                            a:hover {
+                                background-color: lightgreen;
+                                transition-duration: 0.5s;
+                            }
+                        }
+                    }
+                }
+                .dropdown:hover{
+                    .dropdown-list {
+                        display: block;
+                        transition-duration: 1.5s;
+                    }
+                }
+            }
+            .Hide{
+                li:hover{
+                    color: white;
+                    height: (78/@vw);
+                    background-color: lightgreen;
+                    transition-duration: 0.5s;
+                }
+            }
+    }
+}
+
+}
+
+@media (max-width: 1179px) {
+
+    @vw: 3.75vw;
+
+    .right{
+        display: none;
+    }
+    .default{
+        height: (78/@vw);
+        img{
+            width: (78/@vw);
+            height: (78/@vw);
+        }
+    }
+    .button-collapse{
+        position: absolute;
+        left:(-20/@vw);
+        top:(10/@vw);
+    }
+    .mobile{
+        display: none;
+    }
+}
+

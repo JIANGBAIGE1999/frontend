@@ -1,0 +1,27 @@
+
+// out: ../css/test.css
+
+
+@media (min-width: 980px) {
+
+    @vw: 12.8vw;
+    .sidenav-trigger{
+        display: none;
+    }
+    
+    .dropdown-menu{
+        display: block;
+        // background-color: white;
+        width: (135/@vw);
+        li{
+            width: (135/@vw);
+        }
+    }
+    .dropdown-menu:hover{
+        display: none;
+    }
+
+}
+
+
+
